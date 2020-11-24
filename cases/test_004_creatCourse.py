@@ -24,7 +24,7 @@ import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
 
-wb = xlrd.open_workbook(r'E:\zhuqueautomatiic\cases\case.xlsx')
+wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
 sheet1 = wb.sheet_by_index(0)
 sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
@@ -143,13 +143,14 @@ class CreatCourse(unittest.TestCase):
         self.driver.refresh()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, ".tabs-title > div:nth-child(2)").click()
+        time.sleep(1)
 
         js = 'document.getElementsByClassName("backRotate")[0].click()'
         self.driver.execute_script(js)  
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(16,2)).click()
 
-        time.sleep(1)
+        time.sleep(2)
         a = self.driver.find_elements_by_class_name('ellipsis_box')[1].text
         b = sheet1.cell_value(30,2)
         self.assertEqual(a, b, '复制失败')
@@ -171,7 +172,7 @@ class CreatCourse(unittest.TestCase):
         self.assertNotEqual(a, b, '删除失败，删除的作品还在草稿箱中')
     def test_004_EditCourseAndSave(self):
         '''官网编辑课程并保存'''
-        global courseIcon,CreatCourse
+        global courseIcon,CreatCourse,chaptersName,chaptersIntroduce,sceneName,pptName,lessonName
         self.driver.refresh()
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//div[@id='app']/div/div[2]/div/div[2]").click()
@@ -197,9 +198,13 @@ class CreatCourse(unittest.TestCase):
 
         js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
         self.driver.execute_script(js)
+        time.sleep(0.5)
 
         #编辑课程的介绍图
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+        js = 'document.getElementsByClassName("el-icon-plus")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(0.5)
+        # self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(58,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
         time.sleep(3)
@@ -221,24 +226,33 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, sheet2.cell_value(64,4)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(65,3))
+        time.sleep(1)
+        chaptersName = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
+        print("更改后的章节标题=" +chaptersName)
         #编辑更新章节1的介绍
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(66,3))        
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(45,2)).click()
         time.sleep(1)
+        chaptersIntroduce = self.driver.find_elements_by_class_name('chapter-header-title__desc')[0].text
+        print("更改后的章节介绍=" +chaptersIntroduce)
         #编辑更新章节1的课时1的名称
         self.driver.find_element(By.XPATH, sheet2.cell_value(67,4)).click()
         self.driver.find_element(By.XPATH, sheet2.cell_value(68,4)).click()
-
         time.sleep(2)
+
         self.driver.find_elements_by_class_name("el-input__inner")[5].clear()
         self.driver.find_elements_by_class_name("el-input__inner")[5].send_keys(sheet2.cell_value(69,3))
         #删除第一个场景文件
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(70,2)).click()
         #添加场景文件
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(48,2)).click()
+        time.sleep(1)
         #选择第二个场景文件
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
+        time.sleep(1)
+        sceneName = self.driver.find_elements_by_class_name('courseware-name')[0].text
+        print("更改后的课件标题=" +sceneName)
         #上传课件
         js = 'document.getElementsByClassName("el-icon-delete deleteIcon")[1].click()'
         self.driver.execute_script(js)
@@ -247,22 +261,32 @@ class CreatCourse(unittest.TestCase):
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
         time.sleep(5)
+        pptName = self.driver.find_elements_by_class_name('courseware-name')[0].text
+        print("更改后的课件名称："+pptName)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
         time.sleep(1)
+        lessonName = self.driver.find_elements_by_class_name('chapter-header-title__label')[1].text
+        print("更改后的课时标题=" +lessonName)
         self.driver.find_element(By.XPATH, sheet2.cell_value(75,4)).click()
         time.sleep(2)
         #断言名称编辑成功
         a = self.driver.find_elements_by_class_name(sheet2.cell_value(79,1))[0].text
         b = sheet1.cell_value(32,2)
         self.assertEqual(a, b, '编辑失败，编辑课程名称失败')
-    def test_005_EditCourseAndSave(self):
+    def test_005_coursePublish(self):
         '''课程草稿箱点击右下角的设置按钮发布'''
+        self.driver.refresh()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, "//div[@id='app']/div/div[2]/div/div[2]").click()
+        time.sleep(1)
+        self.driver.find_element(By.XPATH, "//div[@id='app']/div/div[2]/div[2]/div/div[2]/div/div").click()
+        time.sleep(2)
         #点击右下角设置按钮
         self.driver.find_element(By.XPATH, sheet2.cell_value(56,4)).click()
         time.sleep(1)
         #点击发布按钮
         self.driver.find_element(By.XPATH, sheet2.cell_value(76,4)).click()
-        time.sleep(1)
+        time.sleep(2)
         #断言发布的课程后不在我的课程草稿页
         a = self.driver.find_elements_by_class_name(sheet2.cell_value(79,1))[0].text
         b = sheet1.cell_value(33,2)
@@ -284,6 +308,110 @@ class CreatCourse(unittest.TestCase):
         a = self.driver.find_elements_by_class_name("cell")[7].text
         b = sheet1.cell_value(35,2)
         self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
+
+    def test_006_EditCourseAndPublish(self):
+        '''课程编辑页发布课程'''
+        global courseIcon,CreatCourse,chaptersName,chaptersIntroduce,sceneName,pptName,lessonName
+        self.driver.refresh()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, "//div[@id='app']/div/div[2]/div/div[2]").click()
+        time.sleep(1)
+        self.driver.find_element(By.XPATH, "//div[@id='app']/div/div[2]/div[2]/div/div[2]/div/div").click()
+        #点击右下角课程按钮
+        time.sleep(3)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(56,4)).click()
+
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(14,2)).click()
+        #编辑课程的名称
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).clear()
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(87,3))
+        time.sleep(1)
+        #编辑课程的icon
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(61,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(90,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        # WebDriverWait(self.driver, 20, 0.5).until(EC.element_to_be_clickable((By.CSS_SELECTOR,".el-icon-delete")))
+
+        time.sleep(4)
+        #删除第一张课程介绍图
+
+        js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(0.5)
+
+        #编辑课程的介绍图
+        js = 'document.getElementsByClassName("el-icon-plus")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(0.5)
+        # self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(91,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(4)
+
+        # WebDriverWait(self.driver, 20, 0.5).until(EC.element_to_be_clickable((By.CSS_SELECTOR,sheet2.cell_value(63,2))))
+        #编辑课程简介
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(63,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(63,2)).send_keys(sheet2.cell_value(88,3))
+
+        time.sleep(1)
+        #记录课程图标
+        courseIcon2 = self.driver.find_element_by_xpath("//form/div[2]/div/div/img").get_attribute("src")
+        print(courseIcon2)
+        #记录课程介绍图
+        courseImg2 = self.driver.find_element_by_class_name("el-upload-list__item-thumbnail").get_attribute("src")
+        print(courseImg2)
+        time.sleep(1)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
+        #编辑更新章节1的名称
+        time.sleep(1)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(64,4)).click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(65,3))
+        time.sleep(1)
+        chaptersName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
+        print("更改后的章节标题=" +chaptersName2)
+        #编辑更新章节1的介绍
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(66,3))        
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(45,2)).click()
+        time.sleep(1)
+        chaptersIntroduce2 = self.driver.find_elements_by_class_name('chapter-header-title__desc')[0].text
+        print("更改后的章节介绍=" +chaptersIntroduce2)
+        #编辑更新章节1的课时1的名称
+        self.driver.find_element(By.XPATH, sheet2.cell_value(67,4)).click()
+        self.driver.find_element(By.XPATH, sheet2.cell_value(68,4)).click()
+        time.sleep(2)
+
+        self.driver.find_elements_by_class_name("el-input__inner")[5].clear()
+        self.driver.find_elements_by_class_name("el-input__inner")[5].send_keys(sheet2.cell_value(69,3))
+        #删除第一个场景文件
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(70,2)).click()
+        #添加场景文件
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(48,2)).click()
+        #选择第二个场景文件
+        self.driver.find_elements_by_class_name("list-item-title")[1].click()
+        time.sleep(1)
+        sceneName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
+        print("更改后的课件标题=" +sceneName2)
+        #上传课件
+        js = 'document.getElementsByClassName("el-icon-delete deleteIcon")[1].click()'
+        self.driver.execute_script(js)
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)
+        pptName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
+        print("更改后的课件名" +pptName2)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
+        time.sleep(1)
+        lessonName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[1].text
+        print("更改后的课时标题=" +lessonName2)
+
+
+
 
 if __name__ == '__main__':
     unittest.main()

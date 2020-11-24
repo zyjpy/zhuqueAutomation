@@ -24,7 +24,7 @@ import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
 
-wb = xlrd.open_workbook(r'E:\zhuqueautomatiic\cases\case.xlsx')
+wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
 sheet1 = wb.sheet_by_index(0)
 sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
@@ -106,6 +106,7 @@ class CreatCourse(unittest.TestCase):
                 time.sleep(1)
             k = k + 1
         print ('已经通过验证码!!!,登录运营后台成功')
+        
 
 # if __name__ == '__main__':
 #     unittest.main()
