@@ -6883,3 +6883,113 @@ JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8
 JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606231405641	geckodriver	INFO	Listening on 127.0.0.1:7945
+1606231410467	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilePEIOSw"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2339: Error: listener not re-registered
+1606231411855	Marionette	INFO	Listening on port 7962
+1606231412027	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit mozilla_cc3@internetdownloadmanager.com.274877906945
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1606231598637	Marionette	INFO	Stopped listening on port 7962
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606231642770	geckodriver	INFO	Listening on 127.0.0.1:10048
+1606231647795	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile30TrOL"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2339: Error: listener not re-registered
+1606231649225	Marionette	INFO	Listening on port 10062
+1606231649374	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit mozilla_cc3@internetdownloadmanager.com.274877906945
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "ADAGIO" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "ADAGIO" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "ADAGIO" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "ADAGIO" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://cloud.setupad.com/postbid/stpd200611_3.js line 7 > Function, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+1606234788887	Marionette	INFO	Stopped listening on port 10062
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilewTyPxf"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2339: Error: listener not re-registered
+1606231769716	Marionette	INFO	Listening on port 12130
+1606231770170	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit mozilla_cc3@internetdownloadmanager.com.274877906945
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://a.vdo.ai/core/dependencies_stories_v1/vdo.min.js, line 37: ReferenceError: logError is not defined
+JavaScript error: https://a.vdo.ai/core/dependencies_stories_v1/vdo.min.js, line 37: ReferenceError: logError is not defined
+JavaScript error: https://a.vdo.ai/core/dependencies_stories_v1/vdo.min.js, line 37: ReferenceError: logError is not defined
+JavaScript error: https://cdn.taboola.com/shared/tbframe.js, line 416: TypeError: iframe.contentWindow is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1606234790851	Marionette	INFO	Stopped listening on port 12130
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606237197139	geckodriver	INFO	Listening on 127.0.0.1:10487
+1606237202185	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileqoYUIm"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2339: Error: listener not re-registered
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2298: Error: primed listener not re-registered
+1606237203539	Marionette	INFO	Listening on port 10498
+1606237203749	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit mozilla_cc3@internetdownloadmanager.com.274877906945
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/js/chunk-a86c1bb6.c442dbc8.js, line 1: TypeError: t is undefined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+1606237212601	Marionette	INFO	Stopped listening on port 10498
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

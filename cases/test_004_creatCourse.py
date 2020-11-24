@@ -23,12 +23,17 @@ import numpy as np
 import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
+import  configparser
 
-wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
+config = configparser.ConfigParser()
+config.read('E:/zhuqueAutomation/config/config.ini')
+config_path = config.get('driver','personConfigPath')
+excel_path = config.get('driver','excelPath')
+
+wb = xlrd.open_workbook(excel_path)
 sheet1 = wb.sheet_by_index(0)
 sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
-
 
 class CreatCourse(unittest.TestCase):
     def isElementExist(self,element):
@@ -41,7 +46,7 @@ class CreatCourse(unittest.TestCase):
             return flag    
     @classmethod        
     def setUpClass(self):
-        fp=webdriver.FirefoxProfile(r"C:\Users\zhangyihui\AppData\Roaming\Mozilla\Firefox\Profiles\jjgecsri.default-release")
+        fp=webdriver.FirefoxProfile(config_path)
         dr = webdriver.Firefox(fp)
         self.driver = dr
     @classmethod

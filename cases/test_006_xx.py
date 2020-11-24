@@ -23,13 +23,8 @@ import numpy as np
 import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
-
-wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
-sheet1 = wb.sheet_by_index(0)
-sheet2 = wb.sheet_by_index(1)
-sheet3 = wb.sheet_by_index(2)
-
-fp=webdriver.FirefoxProfile(r"C:\Users\zhangyihui\AppData\Roaming\Mozilla\Firefox\Profiles\jjgecsri.default-release")
-
-driver = webdriver.Firefox(fp)
-
+import  configparser
+config = configparser.ConfigParser()
+config.read('E:/zhuqueAutomation/config/config.ini')
+username = config.get('driver','personConfigPath')
+print(username)
