@@ -23,18 +23,21 @@ import numpy as np
 import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
+import  configparser
 
+config = configparser.ConfigParser()
+config.read('E:/zhuqueAutomation/config/config.ini')
+config_path = config.get('driver','personConfigPath')
+excel_path = config.get('driver','excelPath')
 
-
-wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
-
+wb = xlrd.open_workbook(excel_path)
 sheet1 = wb.sheet_by_index(0)
 sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
 
 
 class Login(unittest.TestCase):
-    fp=webdriver.FirefoxProfile(r"C:\Users\zhangyihui\AppData\Roaming\Mozilla\Firefox\Profiles\jjgecsri.default-release")
+    fp=webdriver.FirefoxProfile(config_path)
     dr = webdriver.Firefox(fp)
     def isElementExist(self,element):
         flag = True
@@ -109,6 +112,7 @@ class Login(unittest.TestCase):
                 time.sleep(1)
             k = k + 1
         print ('已经通过验证码!!!')
+        self.driver.quit()
 
 if __name__ == '__main__':
     unittest.main()

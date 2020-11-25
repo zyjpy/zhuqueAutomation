@@ -23,12 +23,17 @@ import numpy as np
 import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
+import  configparser
 
-wb = xlrd.open_workbook(r'E:\zhuqueAutomation\cases\case.xlsx')
+config = configparser.ConfigParser()
+config.read('E:/zhuqueAutomation/config/config.ini')
+config_path = config.get('driver','personConfigPath')
+excel_path = config.get('driver','excelPath')
+
+wb = xlrd.open_workbook(excel_path)
 sheet1 = wb.sheet_by_index(0)
 sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
-
 class CreatCourse(unittest.TestCase):
     def isElementExist(self,element):
         flag = True
@@ -40,7 +45,7 @@ class CreatCourse(unittest.TestCase):
             return flag    
     @classmethod        
     def setUpClass(self):
-        fp=webdriver.FirefoxProfile(r"C:\Users\zhangyihui\AppData\Roaming\Mozilla\Firefox\Profiles\jjgecsri.default-release")
+        fp=webdriver.FirefoxProfile(config_path)
         dr = webdriver.Firefox(fp)
         self.driver = dr
     @classmethod
@@ -120,19 +125,37 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,3))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
-        time.sleep(2)
+        time.sleep(5)
+        #输入作品介绍图
+
+        
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(6,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,3))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(7,2)).click()
+        if self.isElementExist("//div[@id='app']/div/div[3]/div/div[2]/form/div[3]/div/div/div/ul/li/div/span"):
+            print("上传成功")
+        else:
+            self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(6,2)).click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,3))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+
+        time.sleep(5)
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(7,2)).click()
+        except Exception as e:
+            print(e)
+            time.sleep(1)
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(7,2)).click()
+            pass
+        else:
+            pass
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(8,2)).send_keys(sheet2.cell_value(28,4))
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(9,2)).click()
-        time.sleep(2)
-        element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, sheet2.cell_value(10,2)))).click()
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(10,2)).click()
+        
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(11,2)).click()
         self.driver.execute_script("window.scrollTo(0,32)")
@@ -150,13 +173,21 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
         time.sleep(1)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
+        except Exception as e:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+            time.sleep(2)
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
+            pass
+
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(16,2)).click()
         #复制的第二个是为了EditAndpublish
         self.driver.refresh()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+        time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(16,2)).click()
@@ -175,8 +206,12 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(13,2)).click()
-        time.sleep(2)
-        a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
+        time.sleep(3)
+        try:
+            a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
+        except Exception as e:
+            a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
+            pass
         b = sheet1.cell_value(2,2)
         self.assertNotEqual(a, b, '删除失败，删除的作品还在草稿箱中')
     def test_004_EditWorkAndSave(self):
@@ -196,29 +231,36 @@ class CreatCourse(unittest.TestCase):
 
         #编辑作品的icon
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(61,2)).click()
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,5))
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,4))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(4)
         #删除第一张作品介绍图
         js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
         self.driver.execute_script(js)
 
-        #编辑添加课程的介绍图
-        self.driver.find_element(By.XPATH, "//div/i").click()
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
-        autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(2)
+        #编辑添加作品的介绍图
+        try:
+            self.driver.find_element(By.XPATH, "//div/i").click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,4))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+        except Exception as e:
+            time.sleep(2)
+            self.driver.find_element(By.XPATH, "//div/i").click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,4))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            pass
+        time.sleep(4)
 
-        #编辑添加课程的场景文件
+        #编辑添加作品的场景文件
         self.driver.find_element(By.XPATH, sheet2.cell_value(48,4)).click()
 
         moudleFileName = self.driver.find_elements_by_class_name("list-item-title")[1].text
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
 
-        #记录课程图标
+        #记录作品图标
         workIcon = self.driver.find_element_by_xpath("//form/div[2]/div/div/img").get_attribute("src")
         print(workIcon)
-        #记录课程介绍图
+        #记录作品介绍图
         workImg = self.driver.find_element_by_class_name("el-upload-list__item-thumbnail").get_attribute("src")
         print(workImg)
         time.sleep(2)
@@ -228,10 +270,6 @@ class CreatCourse(unittest.TestCase):
         time.sleep(1)
         b = sheet1.cell_value(3,2)
         self.assertEqual(a, b, '编辑失败，编辑的作品名称失败')
-        
-        
-
-
 
     def test_005_publishWork(self):
         '''官网草稿页发布作品'''
@@ -244,7 +282,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(17,2)).click()
-        time.sleep(1)
+        time.sleep(2)
         # 发布作品后草稿消失
         a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
         b = sheet2.cell_value(6,2)
@@ -280,7 +318,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.refresh()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(14,2)).click()
@@ -289,6 +327,27 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).send_keys(sheet2.cell_value(27,3))
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(5,1)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,5))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)
+        #删除介绍图
+        js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
+        self.driver.execute_script(js)
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+            time.sleep(2)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+        except Exception as e:
+            time.sleep(2)
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+            time.sleep(2)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            pass
+        time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(26,2)).click()
         # 我的在线作品页存在发布的作品
         self.driver.refresh()
@@ -320,7 +379,7 @@ class CreatCourse(unittest.TestCase):
 
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
         self.driver.set_window_size(1829, 967)
-
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,".creat-button").click()
 
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).click()
@@ -328,18 +387,15 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).send_keys(sheet2.cell_value(28,3))
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(5,2)).click()
-        # js = 'document.getElementsByClassName("avatar-uploader-icon")[0].click()'
-        # self.driver.execute_script(js)
 
-        time.sleep(2)
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,4))
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(5,6))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
         time.sleep(2)
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,4))
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,6))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(7,2)).click()
         time.sleep(2)
         #输入作品简介
@@ -377,7 +433,7 @@ class CreatCourse(unittest.TestCase):
 
 
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 

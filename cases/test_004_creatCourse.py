@@ -62,6 +62,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(5)
 
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(29,2)).click()
+        #点击创作课程按钮
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(30,2)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(31,2)).click()
         time.sleep(2)
@@ -133,7 +134,13 @@ class CreatCourse(unittest.TestCase):
     def test_002_copyCourse(self):
         '''复制课程'''
         time.sleep(2)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+        except Exception as e:
+            time.sleep(1)
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+            pass
+
         time.sleep(1)
         js = 'document.getElementsByClassName("backRotate")[0].click()'
         self.driver.execute_script(js)        
@@ -231,14 +238,13 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, sheet2.cell_value(64,4)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(65,3))
-        time.sleep(1)
-        chaptersName = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
-        print("更改后的章节标题=" +chaptersName)
+        time.sleep(2)
+
         #编辑更新章节1的介绍
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(66,3))        
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(45,2)).click()
-        time.sleep(1)
+        time.sleep(2)
         chaptersIntroduce = self.driver.find_elements_by_class_name('chapter-header-title__desc')[0].text
         print("更改后的章节介绍=" +chaptersIntroduce)
         #编辑更新章节1的课时1的名称
@@ -256,8 +262,8 @@ class CreatCourse(unittest.TestCase):
         #选择第二个场景文件
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
         time.sleep(1)
-        sceneName = self.driver.find_elements_by_class_name('courseware-name')[0].text
-        print("更改后的课件标题=" +sceneName)
+        sceneName = self.driver.find_elements_by_class_name('scene-item')[0].text
+        print("更改后的场景文件=" +sceneName)
         #上传课件
         js = 'document.getElementsByClassName("el-icon-delete deleteIcon")[1].click()'
         self.driver.execute_script(js)
@@ -272,6 +278,8 @@ class CreatCourse(unittest.TestCase):
         time.sleep(1)
         lessonName = self.driver.find_elements_by_class_name('chapter-header-title__label')[1].text
         print("更改后的课时标题=" +lessonName)
+        chaptersName = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
+        print("更改后的章节标题=" +chaptersName)
         self.driver.find_element(By.XPATH, sheet2.cell_value(75,4)).click()
         time.sleep(2)
         #断言名称编辑成功
@@ -306,7 +314,7 @@ class CreatCourse(unittest.TestCase):
 
         #断言审核状态有新发布的课程
         self.driver.find_element(By.XPATH, sheet2.cell_value(78,4)).click()
-        #点击待审核
+        #点击待审核页
         self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click()
 
         time.sleep(1)
@@ -374,9 +382,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, sheet2.cell_value(64,4)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(65,3))
-        time.sleep(1)
-        chaptersName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
-        print("更改后的章节标题=" +chaptersName2)
+        time.sleep(2)
         #编辑更新章节1的介绍
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(66,3))        
@@ -398,8 +404,9 @@ class CreatCourse(unittest.TestCase):
         #选择第二个场景文件
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
         time.sleep(1)
-        sceneName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
-        print("更改后的课件标题=" +sceneName2)
+        sceneName2 = self.driver.find_elements_by_class_name('scene-item')[0].text
+        print("更改后的场景文件=" +sceneName2)
+
         #上传课件
         js = 'document.getElementsByClassName("el-icon-delete deleteIcon")[1].click()'
         self.driver.execute_script(js)
@@ -414,6 +421,83 @@ class CreatCourse(unittest.TestCase):
         time.sleep(1)
         lessonName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[1].text
         print("更改后的课时标题=" +lessonName2)
+        chaptersName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
+        print("更改后的章节标题=" +chaptersName2)
+        #点击发布到课程社区
+        self.driver.find_element(By.XPATH, sheet2.cell_value(86,4)).click()
+        #断言审核状态有新发布的课程
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(78,4)).click()
+        #点击待审核页
+        self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click()
+
+        time.sleep(1)
+        a = self.driver.find_elements_by_class_name("cell")[7].text
+        b = sheet1.cell_value(37,2)
+        self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
+
+    def test_007_creatCourseAndPublish(self):
+        #点击创作课程按钮
+        js = 'document.getElementsByClassName("creat-button")[0].click()'
+        self.driver.execute_script(js)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(31,2)).click()
+        time.sleep(2)
+        self.driver.find_elements_by_class_name(sheet2.cell_value(32,2))[6].click()
+        self.driver.find_elements_by_class_name(sheet2.cell_value(33,2))[7].click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(34,2)).click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(35,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(95,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(96,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(93,3))
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(40,2)).send_keys(sheet2.cell_value(94,3))
+        
+        self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
+        #添加第一章节
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(42,2)).click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(43,3))
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(44,3))
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(45,2)).click()
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(46,2)).click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(47,2)).send_keys(sheet2.cell_value(47,3))
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(48,2)).click()
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(49,2)).click()
+        time.sleep(1)
+        #添加第一章的第一课时
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(50,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(51,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)
+
+        # WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,sheet2.cell_value(52,2))))
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(52,2)).click()
+        time.sleep(2)
+        #断言审核状态有新发布的课程
+        self.driver.find_element(By.XPATH, sheet2.cell_value(86,4)).click()
+        time.sleep(1)
+        #点击待审核页
+        try:
+            self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click()
+
+        except Exception as e:
+            time.sleep(1)
+            self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click()
+            pass
+        time.sleep(1)
+        a = self.driver.find_elements_by_class_name("cell")[7].text
+        b = sheet1.cell_value(39,2)
+        self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
+
+
+
+
+
 
 
 
