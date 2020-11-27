@@ -154,8 +154,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(9,2)).click()
         time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(10,2)).click()
-        
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(10,2)).click() 
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(11,2)).click()
         self.driver.execute_script("window.scrollTo(0,32)")
@@ -170,8 +169,8 @@ class CreatCourse(unittest.TestCase):
         '''官网复制作品'''
         # self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
         # self.driver.set_window_size(1829, 967)
-        time.sleep(2)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+        time.sleep(3)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(19,4)).click()
         time.sleep(1)
         try:
             self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
@@ -216,6 +215,7 @@ class CreatCourse(unittest.TestCase):
         self.assertNotEqual(a, b, '删除失败，删除的作品还在草稿箱中')
     def test_004_EditWorkAndSave(self):
         '''官网编辑作品并保存'''
+        global workName,moudleFileName,workIcon,workImg
         self.driver.refresh()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
@@ -228,6 +228,9 @@ class CreatCourse(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).send_keys(sheet2.cell_value(15,3))
         time.sleep(1)
+        #记录作品名字
+        workName = self.driver.find_elements_by_class_name('el-input__inner')[0].text
+        print(workName)
 
         #编辑作品的icon
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(61,2)).click()
@@ -253,7 +256,9 @@ class CreatCourse(unittest.TestCase):
 
         #编辑添加作品的场景文件
         self.driver.find_element(By.XPATH, sheet2.cell_value(48,4)).click()
-
+        time.sleep
+        #选择第二个场景文件
+        time.sleep(2)
         moudleFileName = self.driver.find_elements_by_class_name("list-item-title")[1].text
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
 
@@ -308,15 +313,22 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(4,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(13,2)).click()
+        time.sleep(2)
         a = self.driver.find_elements_by_class_name('word')[0].text
         b = sheet1.cell_value(9,2)
         self.assertEqual(a, b, '发布失败，社区平台没有看到这个作品')
+        #点击第一个作品
+        self.driver.find_element(By.CSS_SELECTOR, ".item:nth-child(1) > .pic > img").click()
+        time.sleep(5)
+        self.driver.get_screenshot_as_file('E:\\zhuqueAutomation\\screenshot\\zuoping2.png')
+        self.driver.save_screenshot('E:\\zhuqueAutomation\\screenshot\\zuoping3.png')
+
 
     def test_006_EditAndPublish(self):
         '''官网编辑页发布作品'''
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
         self.driver.refresh()
-        time.sleep(2)
+        time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
@@ -371,6 +383,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(4,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(13,2)).click()
+        time.sleep(2)
         a = self.driver.find_elements_by_class_name('word')[0].text
         b = sheet1.cell_value(13,2)
         self.assertEqual(a, b, '发布失败，社区平台没有看到这个作品')
@@ -381,6 +394,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.set_window_size(1829, 967)
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,".creat-button").click()
+
 
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).click()
 
@@ -427,6 +441,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(4,2)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet3.cell_value(13,2)).click()
+        time.sleep(1)
         a = self.driver.find_elements_by_class_name('word')[0].text
         b = sheet1.cell_value(17,2)
         self.assertEqual(a, b, '发布失败，社区平台没有看到这个作品')

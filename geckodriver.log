@@ -7976,8 +7976,11 @@ Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1606298139940	geckodriver	INFO	Listening on 127.0.0.1:50093
-1606298152196	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilei7RxIw"
+1606298744503	Marionette	INFO	Stopped listening on port 49429
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilei7RxIw"
 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 1606298155089	Marionette	INFO	Listening on port 50106
 1606298155452	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -7986,8 +7989,11 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "res
 JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1606298510609	geckodriver	INFO	Listening on 127.0.0.1:50665
-1606298522988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile88UUKZ"
+1606298741162	Marionette	INFO	Stopped listening on port 50106
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile88UUKZ"
 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 1606298525875	Marionette	INFO	Listening on port 50678
 1606298526227	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -7996,3 +8002,2208 @@ JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.mi
 JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 17432, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1606298733020	Marionette	INFO	Stopped listening on port 50678
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606352784998	geckodriver	INFO	Listening on 127.0.0.1:51785
+1606352797891	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileACzddG"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+1606352800713	Marionette	INFO	Listening on port 51801
+1606352801127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2252))
+1606372359007	Marionette	INFO	Stopped listening on port 51801
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+pt error: https://staging.www.qiaojianyun.com/js/app.8db37843.js, line 1: TypeError: e is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/js/app.8db37843.js, line 1: TypeError: e is undefined
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 190: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 235}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 235}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: https://staging.www.qiaojianyun.com/js/app.8db37843.js, line 1: Error: 当前作者已被禁止上传作品
+JavaScript error: https://staging.www.qiaojianyun.com/js/app.8db37843.js, line 1: Error: 当前作者已被禁止上传作品
+[Parent 13960, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1606372343039	Marionette	INFO	Stopped listening on port 52574
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 57ms)
+1606372343747	Marionette	INFO	Stopped listening on port 53351606372350303	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofiler2S7Tm"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1606372354354	Marionette	INFO	Listening on port 60588
+1606372354639	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://staging.www.qiaojianyun.com/js/app.b0d72375.js, line 1: Error: 当前作者已被禁止上传作品
+1606372508309	Marionette	INFO	Stopped listening on port 60588
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606372513922	geckodriver	INFO	Listening on 127.0.0.1:61057
+1606372529896	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileY2HvTu"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1606372534162	Marionette	INFO	Listening on port 61068
+1606372534247	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 22096, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606372856164	Marionette	INFO	Stopped listening on port 61068
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606372857878	geckodriver	INFO	Listening on 127.0.0.1:61674
+1606372873457	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileafjAEN"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1606372877537	Marionette	INFO	Listening on port 61687
+1606372877822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 18944, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606373727082	Marionette	INFO	Stopped listening on port 61687
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606373738732	geckodriver	INFO	Listening on 127.0.0.1:62482
+1606373753419	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileBYRs07"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606373756430	Marionette	INFO	Listening on port 62497
+1606373756658	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Marionette threw an error: TypeError: driver.dialogObserver is null
+waitForNavigationCompleted/<@chrome://marionette/content/navigate.js:364:5
+
+1606373902886	Marionette	INFO	Stopped listening on port 62497
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606373908496	geckodriver	INFO	Listening on 127.0.0.1:62974
+1606373923781	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile54aJA4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606373927137	Marionette	INFO	Listening on port 62985
+1606373927632	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Marionette threw an error: TypeError: driver.dialogObserver is null
+waitForNavigationCompleted/<@chrome://marionette/content/navigate.js:364:5
+
+1606374049813	Marionette	INFO	Stopped listening on port 62985
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606374064422	geckodriver	INFO	Listening on 127.0.0.1:63405
+1606374076412	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileexUzVu"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606374079219	Marionette	INFO	Listening on port 63416
+1606374079663	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+Marionette threw an error: TypeError: driver.dialogObserver is null
+waitForNavigationCompleted/<@chrome://marionette/content/navigate.js:364:5
+
+1606374133615	Marionette	INFO	Stopped listening on port 63416
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606374134715	geckodriver	INFO	Listening on 127.0.0.1:63559
+1606374149231	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilestsdqa"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606374152443	Marionette	INFO	Listening on port 63572
+1606374152476	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+Marionette threw an error: TypeError: driver.dialogObserver is null
+waitForNavigationCompleted/<@chrome://marionette/content/navigate.js:364:5
+
+1606374170154	Marionette	INFO	Stopped listening on port 63572
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606374174496	geckodriver	INFO	Listening on 127.0.0.1:63670
+1606374187403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileSTj1h4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606374190940	Marionette	INFO	Listening on port 63685
+1606374191247	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1606374296342	Marionette	INFO	Stopped listening on port 63685
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606374497422	geckodriver	INFO	Listening on 127.0.0.1:49964
+1606374508209	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilew8d9ZQ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606374510947	Marionette	INFO	Listening on port 49976
+1606374511459	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 12408, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606374745585	Marionette	INFO	Stopped listening on port 49976
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606374750335	geckodriver	INFO	Listening on 127.0.0.1:50226
+1606374761012	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileG0t432"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606374763518	Marionette	INFO	Listening on port 50236
+1606374763759	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606375568197	Marionette	INFO	Stopped listening on port 50236
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606380190078	geckodriver	INFO	Listening on 127.0.0.1:51667
+1606380202757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileaw0SL5"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380205300	Marionette	INFO	Listening on port 51679
+[Parent 6980, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606380205493	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jq1606380232288	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_m1606380334958	Marionette	INFO	Stopped listening on port 51679
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380334016	Marionette	INFO	Stopped listening on port 51812
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606380339921	geckodriver	INFO	Listening on 127.0.0.1:52033
+1606380352734	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileHHu03T"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380355282	Marionette	INFO	Listening on port 52044
+1606380355469	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380527051	Marionette	INFO	Stopped listening on port 52044
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606380534441	geckodriver	INFO	Listening on 127.0.0.1:52214
+1606380547366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile8dk8sd"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380550098	Marionette	INFO	Listening on port 52224
+1606380550604	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606380690507	Marionette	INFO	Stopped listening on port 52224
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileNXXY22"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380647593	Marionette	INFO	Listening on port 52392
+1606380647734	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+[Parent 12560, Gecko_IOThread] WARNING: file /builds/worker/1606380693330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileKHdE3C"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380695954	Marionette	INFO	Listening on port 52535
+1606380696082	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 67ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606380770994	Marionette	INFO	Stopped listening on port 52535
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606380776877	geckodriver	INFO	Listening on 127.0.0.1:52684
+1606380789437	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofiled90wSi"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380792155	Marionette	INFO	Listening on port 52695
+1606380792184	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 69ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+1606380950253	Marionette	INFO	Stopped listening on port 52695
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606380954401	geckodriver	INFO	Listening on 127.0.0.1:52874
+1606380967518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileriBzTf"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606380970044	Marionette	INFO	Listening on port 52885
+1606380970253	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381063858	Marionette	INFO	Stopped listening on port 52885
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606381069856	geckodriver	INFO	Listening on 127.0.0.1:53057
+1606381082624	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileEi8HLh"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381085202	Marionette	INFO	Listening on port 53067
+1606381085364	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 57ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606381274975	Marionette	INFO	Stopped listening on port 53067
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606381278884	geckodriver	INFO	Listening on 127.0.0.1:53443
+1606381291476	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileqw4RfF"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381294100	Marionette	INFO	Listening on port 53453
+1606381294218	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 71ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1606381400600	Marionette	INFO	Stopped listening on port 53453
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606381404329	geckodriver	INFO	Listening on 127.0.0.1:53612
+1606381416709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileQeCsLf"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381419299	Marionette	INFO	Listening on port 53623
+1606381419461	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606381725392	Marionette	INFO	Stopped listening on port 53623
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606381730659	geckodriver	INFO	Listening on 127.0.0.1:54185
+1606381741886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileP4MnfQ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381745294	Marionette	INFO	Listening on port 54198
+1606381745722	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 309: TypeError: this._captureQueue is undefined
+1606381825627	Marionette	INFO	Stopped listening on port 54198
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606381830041	geckodriver	INFO	Listening on 127.0.0.1:54356
+1606381842350	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile8dQ2Ya"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606381844949	Marionette	INFO	Listening on port 54369
+1606381845087	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+1606382418118	Marionette	INFO	Stopped listening on port 54369
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileDM03bE"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382230838	Marionette	INFO	Listening on port 54636
+1606382230970	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382417212	Marionette	INFO	Stopped listening on port 54636
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606382422484	geckodriver	INFO	Listening on 127.0.0.1:54838
+1606382435218	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile2iOh2r"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382438844	Marionette	INFO	Listening on port 54852
+1606382439083	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 3524, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606382493806	Marionette	INFO	Stopped listening on port 54852
+JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 426: Error: OS.File has been shut down. Rejecting post to writeAtomic
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606382498121	geckodriver	INFO	Listening on 127.0.0.1:55013
+1606382510969	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilefwJlmM"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382513551	Marionette	INFO	Listening on port 55025
+1606382513727	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+1606382821841	Marionette	INFO	Stopped listening on port 55025
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606382835600	geckodriver	INFO	Listening on 127.0.0.1:55316
+1606382847606	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileVN5ksJ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382850204	Marionette	INFO	Listening on port 55326
+1606382850353	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382881532	Marionette	INFO	Stopped listening on port 55326
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606382885676	geckodriver	INFO	Listening on 127.0.0.1:55459
+1606382898339	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileuSCIe0"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606382900965	Marionette	INFO	Listening on port 55472
+1606382901085	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 67ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606383085902	Marionette	INFO	Stopped listening on port 55472
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606383092788	geckodriver	INFO	Listening on 127.0.0.1:55911
+1606383111017	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileJst5Rx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383113517	Marionette	INFO	Listening on port 55940
+1606383113750	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 71ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383316090	Marionette	INFO	Stopped listening on port 55940
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606383319845	geckodriver	INFO	Listening on 127.0.0.1:56231
+1606383331455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileJFjavx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383333966	Marionette	INFO	Listening on port 56245
+1606383334208	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383651563	Marionette	INFO	Stopped listening on port 56245
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilefJyD9S"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383410392	Marionette	INFO	Listening on port 56421
+1606383410504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 59ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383652163	Marionette	INFO	Stopped listening on port 56421
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606383657943	geckodriver	INFO	Listening on 127.0.0.1:56662
+1606383670871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile5Amswu"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383674554	Marionette	INFO	Listening on port 56673
+1606383674715	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 63ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383809084	Marionette	INFO	Stopped listening on port 56673
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606383813981	geckodriver	INFO	Listening on 127.0.0.1:56873
+1606383826702	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileLRi1io"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606383829420	Marionette	INFO	Listening on port 56885
+1606383829940	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 61ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384127786	Marionette	INFO	Stopped listening on port 56885
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384132019	geckodriver	INFO	Listening on 127.0.0.1:57365
+1606384145226	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileKeNaiH"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384147857	Marionette	INFO	Listening on port 57376
+1606384147964	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384193636	Marionette	INFO	Stopped listening on port 57376
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384197412	geckodriver	INFO	Listening on 127.0.0.1:57533
+1606384210515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilebQmRGm"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384213111	Marionette	INFO	Listening on port 57546
+1606384213251	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384483209	Marionette	INFO	Stopped listening on port 57546
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384487730	geckodriver	INFO	Listening on 127.0.0.1:57773
+1606384501026	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilegsD2UU"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384503710	Marionette	INFO	Listening on port 57784
+1606384503764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 61ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606384693220	Marionette	INFO	Stopped listening on port 57784
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384698565	geckodriver	INFO	Listening on 127.0.0.1:58043
+1606384711823	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilecft4uu"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384714458	Marionette	INFO	Listening on port 58056
+1606384714570	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+[Parent 17072, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606384816823	Marionette	INFO	Stopped listening on port 58056
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384821079	geckodriver	INFO	Listening on 127.0.0.1:58243
+1606384833711	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilem7pvLg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384836314	Marionette	INFO	Listening on port 58255
+1606384836453	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 71ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 309: TypeError: this._captureQueue is undefined
+1606384864390	Marionette	INFO	Stopped listening on port 58255
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384870046	geckodriver	INFO	Listening on 127.0.0.1:58396
+1606384888408	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile3SRq3F"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384891012	Marionette	INFO	Listening on port 58408
+1606384891151	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 70ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 309: TypeError: this._captureQueue is undefined
+1606384922184	Marionette	INFO	Stopped listening on port 58408
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606384925478	geckodriver	INFO	Listening on 127.0.0.1:58555
+1606384937911	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileTITVjB"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606384941188	Marionette	INFO	Listening on port 58574
+1606384941254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 69ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606439921549	Marionette	INFO	Stopped listening on port 58574
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606439933712	geckodriver	INFO	Listening on 127.0.0.1:58993
+1606439948513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileGpuijo"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606439953625	Marionette	INFO	Listening on port 59004
+1606439953982	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://staging.www.qiaojianyun.com/basicadmin/js/app.f4d62399.js, line 1: TypeError: o is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/basicadmin/js/app.f4d62399.js, line 1: TypeError: t is undefined
+JavaScript error: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-vendors.8a8299dd.js, line 99: Error: Navigation cancelled from "/wel/index" to "/login" with a new navigation.
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 66ms)
+1606440193205	Marionette	INFO	Stopped listening on port 59004
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606440197665	geckodriver	INFO	Listening on 127.0.0.1:59206
+1606440210367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileUTQzlW"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606440212897	Marionette	INFO	Listening on port 59216
+1606440213101	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 61ms)
+1606440604484	Marionette	INFO	Stopped listening on port 59216
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606440608530	geckodriver	INFO	Listening on 127.0.0.1:59426
+1606440621532	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileUtM99S"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606440623896	Marionette	INFO	Listening on port 59438
+1606440624271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 53ms)
+1606440921420	Marionette	INFO	Stopped listening on port 59438
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606440926161	geckodriver	INFO	Listening on 127.0.0.1:59650
+1606440940129	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile8PUnvP"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606440942521	Marionette	INFO	Listening on port 59662
+1606440942866	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 56ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606441478626	Marionette	INFO	Stopped listening on port 59662
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileHTIES3"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606441422932	Marionette	INFO	Listening on port 60041
+1606441423296	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 59ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606441478215	Marionette	INFO	Stopped listening on port 60041
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606441482805	geckodriver	INFO	Listening on 127.0.0.1:60204
+1606441496134	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileonTODd"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606441498592	Marionette	INFO	Listening on port 60216
+1606441498870	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+1606441734290	Marionette	INFO	Stopped listening on port 60216
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606441739356	geckodriver	INFO	Listening on 127.0.0.1:60453
+1606441752755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilev3vZTg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606441755145	Marionette	INFO	Listening on port 60465
+1606441755496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606441806087	Marionette	INFO	Stopped listening on port 60465
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606441813475	geckodriver	INFO	Listening on 127.0.0.1:60606
+1606441825284	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileI5ppBY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606441827638	Marionette	INFO	Listening on port 60621
+1606441828019	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 56ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://staging.www.qiaojianyun.com/basicadmin/js/app.f4d62399.js, line 1: Error: Error: Network Error
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000A,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000A,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000A,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1606441875965	Marionette	INFO	Stopped listening on port 60621
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606441884057	geckodriver	INFO	Listening on 127.0.0.1:60749
+1606441897057	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilep9sFrs"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606441899460	Marionette	INFO	Listening on port 60762
+1606441899801	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+1606442061330	Marionette	INFO	Stopped listening on port 60762
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606442067300	geckodriver	INFO	Listening on 127.0.0.1:60977
+1606442081083	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileHdoZsX"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606442083492	Marionette	INFO	Listening on port 60989
+1606442083823	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1606442120086	Marionette	INFO	Stopped listening on port 60989
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606442124251	geckodriver	INFO	Listening on 127.0.0.1:61137
+1606442137947	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileExhObr"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606442140272	Marionette	INFO	Listening on port 61148
+1606442140686	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: , line 0: uncaught exception: cancel
+1606448309191	Marionette	INFO	Stopped listening on port 61148
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileEbNiWQ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606448204921	Marionette	INFO	Listening on port 62661
+1606448205185	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 45ms)
+1606448309783	Marionette	INFO	Stopped listening on port 62661
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606448315370	geckodriver	INFO	Listening on 127.0.0.1:62853
+1606448329787	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilegKSal1"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606448332583	Marionette	INFO	Listening on port 62864
+1606448333037	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 62ms)
+1606455655605	Marionette	INFO	Stopped listening on port 62864
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606455662723	geckodriver	INFO	Listening on 127.0.0.1:63998
+1606455676205	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilewkWu6N"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606455680029	Marionette	INFO	Listening on port 64011
+1606455680553	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 63ms)
+1606455923378	Marionette	INFO	Stopped listening on port 64011
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileiV6TE3"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606455787983	Marionette	INFO	Listening on port 64195
+1606455788304	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 49ms)
+1606455924794	Marionette	INFO	Stopped listening on port 64195
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606455974316	geckodriver	INFO	Listening on 127.0.0.1:64399
+1606455987219	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileIurbqI"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606455990736	Marionette	INFO	Listening on port 64421
+1606455991064	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 67ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 6568, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606456054423	Marionette	INFO	Stopped listening on port 64421
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606456065098	geckodriver	INFO	Listening on 127.0.0.1:64579
+1606456078409	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilelgDl5c"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606456080863	Marionette	INFO	Listening on port 64592
+1606456081152	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 59ms)
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606456185756	Marionette	INFO	Stopped listening on port 64592
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606456190499	geckodriver	INFO	Listening on 127.0.0.1:64757
+1606456203478	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilezHMFkX"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606456206057	Marionette	INFO	Listening on port 64769
+1606456206215	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 46ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1606458764899	Marionette	INFO	Stopped listening on port 64769
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileJr169g"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606456648883	Marionette	INFO	Listening on port 65009
+1606456649315	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 66ms)
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 21400, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0xB5002A,name=PWebRenderBridge::Msg___delete__) Channel error: cannot send/recv
+
+emp\\rust_mozprofile9WDphP"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606456947582	Marionette	INFO	Listening on port 65244
+1606456947632	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 61ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1606458658020	Marionette	INFO	Stopped listening on port 65244
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+e" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileaDtC7A"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606457053770	Marionette	INFO	Listening on port 65446
+1606457054082	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 69ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1606458658518	Marionette	INFO	Stopped listening on port 65446
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+glSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606457196126	Marionette	INFO	Listening on port 49263
+1606457196607	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 56ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1606458659250	Marionette	INFO	Stopped listening on port 49263
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+e" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileiw9NTZ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606457396865	Marionette	INFO	Listening on port 49504
+1606457396890	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1606458659639	Marionette	INFO	Stopped listening on port 49504
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+glSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606457493257	Marionette	INFO	Listening on port 49678
+1606457493631	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458659878	Marionette	INFO	Stopped listening on port 49678
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileccpryY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606457840660	Marionette	INFO	Listening on port 49953
+1606457840805	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606458134363	Marionette	INFO	Stopped listening on port 49953
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606458145099	geckodriver	INFO	Listening on 127.0.0.1:50174
+1606458159655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile2cAbb2"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458163240	Marionette	INFO	Listening on port 50186
+1606458163495	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+1606458199200	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458660335	Marionette	INFO	Stopped listening on port 50186
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileMLQh0T"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458332509	Marionette	INFO	Listening on port 50415
+1606458332691	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+1606458660830	Marionette	INFO	Stopped listening on port 50415
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606458665225	geckodriver	INFO	Listening on 127.0.0.1:50653
+1606458680280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileGPuIAW"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458684179	Marionette	INFO	Listening on port 50665
+1606458684622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458761342	Marionette	INFO	Stopped listening on port 50665
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606458946139	geckodriver	INFO	Listening on 127.0.0.1:49824
+1606458957756	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileRsO4LF"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606458960687	Marionette	INFO	Listening on port 49835
+1606458961013	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1606459011758	Marionette	INFO	Stopped listening on port 49835
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606459028587	geckodriver	INFO	Listening on 127.0.0.1:49989
+1606459039709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile1ThmFU"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606459042127	Marionette	INFO	Listening on port 50000
+1606459042449	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606459142881	Marionette	INFO	Stopped listening on port 50000
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606459145812	geckodriver	INFO	Listening on 127.0.0.1:50181
+1606459156503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilevv1iYv"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606459159016	Marionette	INFO	Listening on port 50191
+1606459159243	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 69ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+1606459395665	Marionette	INFO	Stopped listening on port 50191
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606459399445	geckodriver	INFO	Listening on 127.0.0.1:50398
+1606459409675	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofiletuoxmd"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606459412309	Marionette	INFO	Listening on port 50407
+1606459412426	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606459488359	Marionette	INFO	Stopped listening on port 50407
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606459492742	geckodriver	INFO	Listening on 127.0.0.1:50778
+1606459504291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilemNCVqC"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606459506745	Marionette	INFO	Listening on port 50789
+1606459507027	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 57ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460335032	Marionette	INFO	Stopped listening on port 50789
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilen7o7ST"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460107026	Marionette	INFO	Listening on port 51132
+1606460107262	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 59ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460332998	Marionette	INFO	Stopped listening on port 51131606460343687	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilelxvl9a"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460346452	Marionette	INFO	Listening on port 51336
+1606460346922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606460433096	Marionette	INFO	Stopped listening on port 51336
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606460438498	geckodriver	INFO	Listening on 127.0.0.1:51528
+1606460450363	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileoHraVp"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460452841	Marionette	INFO	Listening on port 51538
+1606460453100	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 59ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606460527826	Marionette	INFO	Stopped listening on port 51538
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606460532020	geckodriver	INFO	Listening on 127.0.0.1:51700
+1606460543729	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilehmEIVR"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460546281	Marionette	INFO	Listening on port 51708
+1606460546464	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 61ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460704925	Marionette	INFO	Stopped listening on port 51708
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606460710360	geckodriver	INFO	Listening on 127.0.0.1:51916
+1606460721985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileVBWNK0"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460724381	Marionette	INFO	Listening on port 51927
+1606460724718	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://staging.www.qiaojianyun.com/js/app.07205318.js, line 1: Error: 当前作者已被禁止上传作品
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 309: TypeError: this._captureQueue is undefined
+1606460835847	Marionette	INFO	Stopped listening on port 51927
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606460921391	geckodriver	INFO	Listening on 127.0.0.1:52163
+1606460930946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofiledfa9ao"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606460933393	Marionette	INFO	Listening on port 52175
+1606460933681	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606462403637	Marionette	INFO	Stopped listening on port 52175
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileV9ZEPd"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606461144157	Marionette	INFO	Listening on port 52419
+1606461144370	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+[Parent 13036, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606461428692	Marionette	INFO	Stopped listening on port 52419
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606461534072	geckodriver	INFO	Listening on 127.0.0.1:52710
+1606461544567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile4fMCjE"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606461547144	Marionette	INFO	Listening on port 52720
+1606461547332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+1606462408344	Marionette	INFO	Stopped listening on port 52720
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606462416974	geckodriver	INFO	Listening on 127.0.0.1:53130
+1606462429334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilepWFght"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606462432008	Marionette	INFO	Listening on port 53140
+1606462432079	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+1606462690602	Marionette	INFO	Stopped listening on port 53140
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606462701036	geckodriver	INFO	Listening on 127.0.0.1:53410
+1606462713663	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileowSJdg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606462716230	Marionette	INFO	Listening on port 53421
+1606462716400	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+1606464408775	Marionette	INFO	Stopped listening on port 53421
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileNfIRCW"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606464283572	Marionette	INFO	Listening on port 54010
+1606464283706	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 56ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606464406323	Marionette	INFO	Stopped listening on port 54010
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606464413179	geckodriver	INFO	Listening on 127.0.0.1:54164
+1606464425205	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileOYruns"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606464427827	Marionette	INFO	Listening on port 54176
+1606464427951	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 66ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606465767632	Marionette	INFO	Stopped listening on port 54176
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileLvulA0"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606465268505	Marionette	INFO	Listening on port 54449
+1606465268707	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 1176, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606470908351	Marionette	INFO	Stopped listening on port 54449
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ilewoj7vA"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606465854182	Marionette	INFO	Listening on port 54734
+1606465854298	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 4488, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606466072990	Marionette	INFO	Stopped listening on port 54734
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ileKEJp44"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606466069301	Marionette	INFO	Listening on port 55004
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 376))
+1606466070812	Marionette	INFO	Stopped listening on port 55004
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606466434740	geckodriver	INFO	Listening on 127.0.0.1:55086
+1606466446655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileZfHfjJ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606466449238	Marionette	INFO	Listening on port 55096
+1606466449394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 58ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470896300	Marionette	INFO	Stopped listening on port 55096
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileaDU64k"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606466571355	Marionette	INFO	Listening on port 55303
+1606466571402	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 169: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 613: TypeError: context.contentWindow is null
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470897558	Marionette	INFO	Stopped listening on port 55303
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileEKaG6j"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606466782439	Marionette	INFO	Listening on port 55574
+1606466782748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 72ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470898704	Marionette	INFO	Stopped listening on port 55574
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilefJzLXx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606467059906	Marionette	INFO	Listening on port 55792
+1606467060263	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606467315052	Marionette	INFO	Stopped listening on port 55791606467315233	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileGZDa4v"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606467318795	Marionette	INFO	Listening on port 56047
+1606467319070	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 73ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470900070	Marionette	INFO	Stopped listening on port 56047
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileMJMr5C"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606468104563	Marionette	INFO	Listening on port 56405
+1606468104999	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470895100	Marionette	INFO	Stopped listening on port 56405
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilek7QO1j"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606468321111	Marionette	INFO	Listening on port 56660
+1606468321270	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 57ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470893710	Marionette	INFO	Stopped listening on port 56660
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilebgxtau"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606468433319	Marionette	INFO	Listening on port 56848
+1606468433389	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 71ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 17492, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606470900170	Marionette	INFO	Stopped listening on port 56848
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+.
+1606468584298	Marionette	INFO	Listening on port 57044
+1606468584474	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 66ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470900618	Marionette	INFO	Stopped listening on port 57044
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilexHQnsT"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606468840517	Marionette	INFO	Listening on port 57303
+1606468840911	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 726))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 376))
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 64ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+IPDL protocol error: Error deserializing 'DisplayListData'
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xB50025,name=PWebRenderBridge::Msg_Shutdown) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xA10003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xA10003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xD,name=PAPZ::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x370019,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xB50025,name=PWebRenderBridge::Msg_Shutdown) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x370019,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1606470900666	Marionette	INFO	Stopped listening on port 57303
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+lid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 235: Error: Invalid autocomplete selectedIndex
+1606470901327	Marionette	INFO	Stopped listening on port 57498
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile9WQTyx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606469784748	Marionette	INFO	Listening on port 57820
+1606469784993	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 71ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470902122	Marionette	INFO	Stopped listening on port 57820
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilepJXYX4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606469930650	Marionette	INFO	Listening on port 58030
+1606469930972	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 52ms)
+1606470029812	Marionette	INFO	Stopped listening on port 58030
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606470034931	geckodriver	INFO	Listening on 127.0.0.1:58215
+1606470046913	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileh96JBV"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470050404	Marionette	INFO	Listening on port 58225
+1606470050768	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 51ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470902931	Marionette	INFO	Stopped listening on port 58225
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilet11wTg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470141458	Marionette	INFO	Listening on port 58429
+1606470141888	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[GFX1-]: DCompositionSurface::BeginDraw failed: 0x8007000e
+[GFX1-]: Compositors might be mixed (5,3)
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1800,2304)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1800, 2304
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1800,2304)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1800, 2304
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1800,2304)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1800, 2304
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1800,2304)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1800, 2304
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1800,2304)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1800, 2304
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the han1606471423183	Marionette	INFO	Stopped listening on port 58702
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was1606470976436	Marionette	INFO	Stopped listening on port 58911
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+the handler returned false (indicating failure)
+
+1606470907728	Marionette	INFO	Stopped listening on port 58429
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606470977354	geckodriver	INFO	Listening on 127.0.0.1:59243
+1606470990136	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileFOjFQ4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606470994278	Marionette	INFO	Listening on port 59255
+1606470994492	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 65ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606471421111	Marionette	INFO	Stopped listening on port 59255
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileIBu1rG"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606471196714	Marionette	INFO	Listening on port 59463
+1606471197079	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1606471318640	Marionette	INFO	Stopped listening on port 59463
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606471431622	geckodriver	INFO	Listening on 127.0.0.1:59682
+1606471442939	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofilepuurjn"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606471445373	Marionette	INFO	Listening on port 59692
+1606471445679	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript error: https://js.fundebug.cn/fundebug.revideo.0.6.2.min.js, line 1: ReferenceError: fundebug is not defined
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[Parent 21208, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:166
+1606471636944	Marionette	INFO	Stopped listening on port 59692
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606471641356	geckodriver	INFO	Listening on 127.0.0.1:60176
+1606471653901	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofile4j8jbZ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606471656360	Marionette	INFO	Listening on port 60186
+1606471656635	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1606472028614	Marionette	INFO	Stopped listening on port 60186
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606472034707	geckodriver	INFO	Listening on 127.0.0.1:60425
+1606472047882	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileSb0Lcu"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606472050357	Marionette	INFO	Listening on port 60436
+1606472050617	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606472250667	Marionette	INFO	Stopped listening on port 60436
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606472255212	geckodriver	INFO	Listening on 127.0.0.1:60682
+1606472267389	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ZHANGY~1\\AppData\\Local\\Temp\\rust_mozprofileLt6BPh"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+1606472270307	Marionette	INFO	Listening on port 60692
+1606472270644	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://start.firefoxchina.cn/js/tabLib-min.js?v=20150120, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://staging.www.qiaojianyun.com/basicadmin/js/chunk-e9a64132.7e9bfd31.js, line 0: Successfully compiled asm.js code (total compilation time 73ms)
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.3/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
