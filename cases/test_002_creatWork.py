@@ -205,7 +205,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(13,2)).click()
-        time.sleep(3)
+        time.sleep(5)
         try:
             a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
         except Exception as e:
@@ -347,18 +347,18 @@ class CreatCourse(unittest.TestCase):
         #删除介绍图
         js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
         self.driver.execute_script(js)
-        try:
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+        time.sleep(2)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)   
+        if self.isElementExist("//li/div/span"):
+            print("上传介绍图成功")
+        else:
             self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
             time.sleep(2)
             autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
             autoit.control_click("文件上传","[Class:Button; instance:1]")
-        except Exception as e:
-            time.sleep(2)
-            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
-            time.sleep(2)
-            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,5))
-            autoit.control_click("文件上传","[Class:Button; instance:1]")
-            pass
         time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(26,2)).click()
         # 我的在线作品页存在发布的作品

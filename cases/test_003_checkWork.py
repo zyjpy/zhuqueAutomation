@@ -54,8 +54,9 @@ class CreatCourse(unittest.TestCase):
     @classmethod
     def tearDownClass(self):
         pass
-
+    
     def test_001_loginOperation(self):
+        '''登录运营后台'''
         self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/login")
         self.driver.set_window_size(1600, 1040)
         self.driver.set_window_rect(0,0)
@@ -115,7 +116,8 @@ class CreatCourse(unittest.TestCase):
                 time.sleep(1)
             k = k + 1
         print ('已经通过验证码!!!,登录运营后台成功')
-    def test_002_checkWorkNopass(self):
+    def test_002_checkWork(self):
+        '''审核作品不通过'''
         self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(14,2)).click()
         time.sleep(1)
         self.driver.find_element(By.XPATH, sheet4.cell_value(16,4)).click()
@@ -136,7 +138,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         #点击审核不通过的第二个作品 猴子3
         self.driver.find_element(By.XPATH, sheet4.cell_value(18,4)).click()
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(31,2)).click()
         time.sleep(3)
         js = 'document.getElementsByClassName("el-select-dropdown__item")[36].click()'
@@ -252,7 +254,7 @@ class CreatCourse(unittest.TestCase):
         b = sheet1.cell_value(47,2)
         self.assertNotEqual(a, b, '审核不通过，但在社区平台看到这个作品：猴子3')
         #审核通过，断言作品社区第1个位置存在这个作品猴子4
-        a = self.driver.find_elements_by_class_name('word')[1].text
+        a = self.driver.find_elements_by_class_name('word')[0].text
         b = sheet1.cell_value(48,2)
         self.assertEqual(a, b, '审核不通过，社区平台看到了这个作品：猴子4')
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
@@ -271,27 +273,136 @@ class CreatCourse(unittest.TestCase):
         a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
         b = sheet1.cell_value(51,2)
         self.assertEqual(a, b, '审核通过，在线作品页看到这个作品：猴子4')
+        
     def test_003_republishWork(self):
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
-        time.sleep(1)
-        self.driver.find_element_by_css_selector(sheet2.cell_value(78,2)).click()
-        time.sleep(1)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(21,2)).click()
+        self.driver.set_window_size(1600, 1040)
+        self.driver.set_window_rect(0,0)
+        time.sleep(2)
+        self.driver.find_element_by_css_selector(sheet2.cell_value(21,2)).click()
         #断言审核状态页第三个位置的作品的状态为未通过
         time.sleep(2)
 
-        
-        a = self.driver.find_elements_by_class_name('ellipsis_box')[2].text
-        b = b = sheet1.cell_value(49,2)
-        self.assertNotEqual(a, b, '审核不通过，但在线作品页看到这个作品的状态错误')
+        a = self.driver.find_elements_by_class_name('cell')[18].text
+        b = b = sheet1.cell_value(52,2)
+        self.assertEqual(a, b, '审核不通过，但在线作品页看到第三个位置的作品的状态错误')
         #断言审核状态页第二个位置的作品的状态为未通过
-        a = self.driver.find_elements_by_class_name('ellipsis_box')[1].text
-        b = b = sheet1.cell_value(50,2)
-        self.assertNotEqual(a, b, '审核不通过，但在线作品页看到这个作品的状态错误')
+        a = self.driver.find_elements_by_class_name('cell')[13].text
+        b = b = sheet1.cell_value(53,2)
+        self.assertEqual(a, b, '审核不通过，但在线作品页看到第二个位置的作品的状态错误')
         #审核通过，断言审核状态页第一个位置作品的状态为 已通过
+        a = self.driver.find_elements_by_class_name('cell')[8].text
+        b = sheet1.cell_value(54,2)
+        self.assertEqual(a, b, '审核通过，审核状态页第一个位置作品的状态为 已审核')
+        #重新编辑第二个作品猴子3，保存到草稿
+        self.driver.find_element_by_css_selector(sheet2.cell_value(98,2)).click()
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(99,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(99,2)).send_keys(sheet2.cell_value(99,3))
+
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(5,1)).click()
+        time.sleep(1)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(100,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)
+        #删除介绍图
+        js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(5)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+        time.sleep(2)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")        
+        if self.isElementExist("//li/div/span"):
+            print("上传介绍图成功")
+        else:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+            time.sleep(2)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")        
+        time.sleep(5)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).send_keys(sheet2.cell_value(102,3))
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(9,2)).click()
+        time.sleep(2)
+        #选择第三个素材
+        self.driver.find_elements_by_class_name('list-item-title')[2].click()
+        time.sleep(1)
+        #点击发布
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(11,2)).click()
+        time.sleep(2)
+        #点击我的草稿，查看草稿是否存在
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(19,2)).click()
+        time.sleep(2)
         a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
-        b = sheet1.cell_value(51,2)
-        self.assertEqual(a, b, '审核通过，审核状态页第一个位置作品的状态为 已通过')
+        b = sheet1.cell_value(55,2)
+        self.assertEqual(a, b, '在审核状态页编辑并保存,失败，在我的在线作品页看不到保存的作品')
+        #点击审核状态页
+        self.driver.find_element_by_css_selector(sheet2.cell_value(21,2)).click()
+        time.sleep(2)
+        
+        self.driver.find_element_by_css_selector(sheet2.cell_value(98,2)).click()
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(99,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(99,2)).send_keys(sheet2.cell_value(99,3))
+
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(5,1)).click()
+        time.sleep(1)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(100,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)
+        #删除介绍图
+        js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
+        self.driver.execute_script(js)
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+            time.sleep(2)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+        except Exception as e:
+            time.sleep(2)
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+            time.sleep(2)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            pass
+        finally:
+            time.sleep(5)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).send_keys(sheet2.cell_value(102,3))
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(9,2)).click()
+        time.sleep(2)
+        #选择第三个素材
+        self.driver.find_elements_by_class_name('list-item-title')[2].click()
+        time.sleep(2)
+        #点击发布到社区平台
+        self.driver.find_element(By.XPATH,sheet2.cell_value(26,4)).click()
+        time.sleep(2)
+        #断言审核状态页第二个位置的作品的状态为未通过
+        a = self.driver.find_elements_by_class_name('cell')[13].text
+        b = b = sheet1.cell_value(56,2)
+        self.assertEqual(a, b, '再次发布作品失败，但审核页看到第二个位置的作品的状态没有变成未审核')
+
+        #社区平台
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(11,2)).click()
+        #最新发布排序
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(13,2)).click()
+        time.sleep(2)
+        a = self.driver.find_elements_by_class_name('word')[0].text
+        b = sheet1.cell_value(57,2)
+        self.assertEqual(a, b, '再次发布作品失败，社区平台没有看到这个作品')
+
+
+
+
+
+
+        
+
 
 
 
