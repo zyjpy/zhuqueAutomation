@@ -50,7 +50,7 @@ class CreatCourse(unittest.TestCase):
         self.driver = dr
     @classmethod
     def tearDownClass(self):
-        pass
+        self.driver.quit()
 
     def test_001_creatWorkSaveDraft(self):
         '''官网创建作品保存为草稿'''
@@ -252,7 +252,7 @@ class CreatCourse(unittest.TestCase):
             autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(6,4))
             autoit.control_click("文件上传","[Class:Button; instance:1]")
             pass
-        time.sleep(4)
+        time.sleep(5)
 
         #编辑添加作品的场景文件
         self.driver.find_element(By.XPATH, sheet2.cell_value(48,4)).click()
@@ -283,7 +283,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.refresh()
         time.sleep(2)
         # self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(17,2)).click()

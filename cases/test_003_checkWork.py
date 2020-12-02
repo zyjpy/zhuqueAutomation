@@ -53,8 +53,8 @@ class CreatCourse(unittest.TestCase):
         self.driver = dr
     @classmethod
     def tearDownClass(self):
-        pass
-    
+        self.driver.quit()
+
     def test_001_loginOperation(self):
         '''登录运营后台'''
         self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/login")
@@ -116,7 +116,7 @@ class CreatCourse(unittest.TestCase):
                 time.sleep(1)
             k = k + 1
         print ('已经通过验证码!!!,登录运营后台成功')
-    def test_002_checkWork(self):
+    def test_002_checkWorkNopass(self):
         '''审核作品不通过'''
         self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(14,2)).click()
         time.sleep(1)
@@ -148,8 +148,9 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, "//div[3]/div/div/textarea").send_keys(sheet4.cell_value(41,3))
         time.sleep(0.5)
         self.driver.find_element(By.XPATH, sheet4.cell_value(40,4)).click()
-        #点击审核通过第三个作品 猴子4
         time.sleep(2)
+        #点击审核通过第三个作品 猴子4
+    def test_003_checkWorkPass(self):
         self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(19,2)).click()
         time.sleep(1)
         #点击打开作品状态下拉框
@@ -273,8 +274,8 @@ class CreatCourse(unittest.TestCase):
         a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
         b = sheet1.cell_value(51,2)
         self.assertEqual(a, b, '审核通过，在线作品页看到这个作品：猴子4')
-        
-    def test_003_republishWork(self):
+
+    def test_004_republishWork(self):
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
         self.driver.set_window_size(1600, 1040)
         self.driver.set_window_rect(0,0)
@@ -308,11 +309,12 @@ class CreatCourse(unittest.TestCase):
         #删除介绍图
         js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
         self.driver.execute_script(js)
-        time.sleep(5)
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
         time.sleep(2)
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
-        autoit.control_click("文件上传","[Class:Button; instance:1]")        
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)        
         if self.isElementExist("//li/div/span"):
             print("上传介绍图成功")
         else:
@@ -355,20 +357,19 @@ class CreatCourse(unittest.TestCase):
         #删除介绍图
         js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
         self.driver.execute_script(js)
-        try:
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
+        time.sleep(2)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(5)        
+        if self.isElementExist("//li/div/span"):
+            print("上传介绍图成功")
+        else:
             self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
             time.sleep(2)
             autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
-            autoit.control_click("文件上传","[Class:Button; instance:1]")
-        except Exception as e:
-            time.sleep(2)
-            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(6,2)).click()
-            time.sleep(2)
-            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(101,2))
-            autoit.control_click("文件上传","[Class:Button; instance:1]")
-            pass
-        finally:
-            time.sleep(5)
+            autoit.control_click("文件上传","[Class:Button; instance:1]")        
+        time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(102,2)).send_keys(sheet2.cell_value(102,3))
         time.sleep(2)
@@ -390,9 +391,9 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(11,2)).click()
         #最新发布排序
         time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(13,2)).click()
+        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(13,2)).click()
         time.sleep(2)
-        a = self.driver.find_elements_by_class_name('word')[0].text
+        a = self.driver.find_elements_by_class_name('word')[1].text
         b = sheet1.cell_value(57,2)
         self.assertEqual(a, b, '再次发布作品失败，社区平台没有看到这个作品')
 
