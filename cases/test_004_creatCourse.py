@@ -80,6 +80,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(39,3))
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(40,2)).send_keys(sheet2.cell_value(40,3))
+        time.sleep(1)
         
         self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
         #添加第一章节
@@ -232,7 +233,7 @@ class CreatCourse(unittest.TestCase):
         #记录课程介绍图
         courseImg = self.driver.find_element_by_class_name("el-upload-list__item-thumbnail").get_attribute("src")
         print(courseImg)
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
         #编辑更新章节1的名称
         time.sleep(1)
@@ -272,7 +273,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(5)
+        time.sleep(8)
         pptName = self.driver.find_elements_by_class_name('courseware-name')[0].text
         print("更改后的课件名称："+pptName)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
@@ -318,7 +319,7 @@ class CreatCourse(unittest.TestCase):
         #点击待审核页
         self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click()
 
-        time.sleep(1)
+        time.sleep(2)
         a = self.driver.find_elements_by_class_name("cell")[7].text
         b = sheet1.cell_value(35,2)
         self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
@@ -362,7 +363,7 @@ class CreatCourse(unittest.TestCase):
         # self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(91,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(4)
+        time.sleep(5)
 
         # WebDriverWait(self.driver, 20, 0.5).until(EC.element_to_be_clickable((By.CSS_SELECTOR,sheet2.cell_value(63,2))))
         #编辑课程简介
@@ -403,7 +404,7 @@ class CreatCourse(unittest.TestCase):
         #添加场景文件
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(48,2)).click()
         #选择第二个场景文件
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_elements_by_class_name("list-item-title")[1].click()
         time.sleep(1)
         sceneName2 = self.driver.find_elements_by_class_name('scene-item')[0].text
@@ -416,7 +417,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(5)
+        time.sleep(8)
         pptName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
         print("更改后的课件名" +pptName2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
@@ -450,11 +451,21 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(35,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(95,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(5)
+
+
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(96,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(5)
+        if self.isElementExist("//div[@id='app']/div/div[3]/div/div[2]/form/div[3]/div/div/div/ul/li/div/span"):
+            print("上传成功")
+        else:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(96,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            time.sleep(5)
+
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(93,3))
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(40,2)).send_keys(sheet2.cell_value(94,3))
         
@@ -475,7 +486,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(50,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(51,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(5)
+        time.sleep(8)
 
         # WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,sheet2.cell_value(52,2))))
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(52,2)).click()

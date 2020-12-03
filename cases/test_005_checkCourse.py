@@ -25,7 +25,7 @@ import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
 import  configparser
-from test_004_creatCourse import CreatCourse
+# from test_004_creatCourse import CreatCourse
 config = configparser.ConfigParser()
 config.read('E:/zhuqueAutomation/config/config.ini')
 config_path = config.get('driver','personConfigPath')
@@ -139,10 +139,10 @@ class CheckCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(43,2)).send_keys(sheet4.cell_value(43,3))
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
-        time.sleep(2)
     def test_003_checkpass(self):
         '''第一课程和第二课程都审核通过，第一课程修改分类为第2和第3分类'''
         #先审核第二课程
+        time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(7,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,".course-name").click()
@@ -177,11 +177,14 @@ class CheckCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
         time.sleep(2)
         #审核第一课程
+        #点击课程审核状态页
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(7,6)).click()
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,".course-name").click()
         ActionChains(self.driver).send_keys(Keys.DOWN).perform()
         ActionChains(self.driver).send_keys(Keys.DOWN).perform()
         ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        time.sleep(2)
         #输入审核原因
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(43,2)).send_keys(sheet4.cell_value(43,3))
         time.sleep(1)
