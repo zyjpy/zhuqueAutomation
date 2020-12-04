@@ -58,7 +58,7 @@ class Login(unittest.TestCase):
         '''账号密码登录官网'''
         print("账号密码登录官网")
         self.driver.get("https://staging.www.qiaojianyun.com/#/login")
-        self.driver.set_window_size(1600, 900)
+        self.driver.set_window_size(1800,1040)
         self.driver.set_window_rect(0,0)
         time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("admin032")

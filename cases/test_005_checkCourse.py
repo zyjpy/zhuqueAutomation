@@ -25,6 +25,7 @@ import urllib
 from cv2 import cv2
 from xml.dom.minidom import parse
 import  configparser
+from PIL import ImageGrab
 # from test_004_creatCourse import CreatCourse
 config = configparser.ConfigParser()
 config.read('E:/zhuqueAutomation/config/config.ini')
@@ -62,8 +63,9 @@ class CheckCourse(unittest.TestCase):
         '''登录运营后台'''
         #登录运营后台
         self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/login")
-        self.driver.set_window_size(1600, 1040)
+        self.driver.set_window_size(1800,1040)
         self.driver.set_window_rect(0,0)
+
         time.sleep(4)
         self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").clear()
         self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("zyj")
@@ -121,7 +123,7 @@ class CheckCourse(unittest.TestCase):
             k = k + 1
         print ('已经通过验证码!!!,登录运营后台成功')
     def test_002_checkNopass(self):
-        '''第三课程审核不通过'''
+        '''第三课程斑马2审核不通过'''
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(2,2)).click()
         time.sleep(2)
         self.driver.find_element(By.XPATH,sheet4.cell_value(4,4)).click()
@@ -189,10 +191,11 @@ class CheckCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(43,2)).send_keys(sheet4.cell_value(43,3))
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
+
     def test_004_checkCourseCentre(self):
         '''检查官网的课程的审核结果'''
         self.driver.get("https://staging.www.qiaojianyun.com/#/login")
-        self.driver.set_window_size(1600, 900)
+        self.driver.set_window_size(1800,1040)
         self.driver.set_window_rect(0,0)
         time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("admin032")
@@ -249,10 +252,8 @@ class CheckCourse(unittest.TestCase):
         time.sleep(2)
         #点击课程中心
         self.driver.find_element(By.ID,"kecheng").click()
-        time.sleep(2)
-        self.driver.find_elements_by_class_name('pic')[1].click()
         time.sleep(3)
-        #断言斑马3的作品的属性，名称，简介，原价，现价，难度
+        #断言课程中心页斑马3的作品的属性，名称，简介，原价，现价，难度
         a = self.driver.find_elements_by_class_name('word')[1].text
         b = sheet1.cell_value(63,2)
         self.assertEqual(a, b, '课程审核通过后，课程平台没有看到了这个课程：斑马3')
@@ -270,7 +271,7 @@ class CheckCourse(unittest.TestCase):
         # b = sheet1.cell_value(68,2)
         # self.assertEqual(a, b, '课程审核通过后课程平台的作品的图标不对')
         
-        #断言斑马4的作品的属性，名称，简介，原价，现价，难度
+        #断言课程中心页斑马4的作品的属性，名称，简介，原价，现价，难度
         a = self.driver.find_elements_by_class_name('word')[0].text
         b = sheet1.cell_value(69,2)
         self.assertEqual(a, b, '课程审核通过后，课程平台没有看到了这个课程：斑马4')
@@ -294,9 +295,13 @@ class CheckCourse(unittest.TestCase):
     def test_005_checkResultOfDetail(self):
         '''点击斑马3,进入详情页,断言日期'''
 
-        #断言名称是斑马3
+        #点击斑马3
         self.driver.find_elements_by_class_name('pic')[1].click()
-        time.sleep(3)
+        time.sleep(5)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/003_课程详情.jpg')
+
+        #断言名称是斑马3
         a = self.driver.find_element_by_xpath('//div[2]/div/div/div[2]/div/div').text
         b = sheet1.cell_value(76,2)
         self.assertEqual(a, b, '课程详情页课程名称错误')
@@ -312,8 +317,8 @@ class CheckCourse(unittest.TestCase):
         timeNow = datetime.datetime.now().strftime('%Y-%m-%d')
         timeCreat = self.driver.find_element(By.XPATH,"//div[2]/div/div/div[2]/div[3]/div").text
         timeDate = timeCreat.partition(timeNow)
-        print(timeDate)
-        self.assertEqual(timeNow, timeDate, '课程详情的时间不对')
+        print(timeDate[1])
+        self.assertEqual(timeNow, timeDate[1], '课程详情的时间不对')
         #断言课程简介
         a = self.driver.find_element_by_xpath("//pre[contains(.,'斑马3简介')]").text
         b = sheet1.cell_value(80,2)
@@ -335,38 +340,35 @@ class CheckCourse(unittest.TestCase):
         self.assertEqual(a, b, '章节1简介错误')
         #点击第一章节，展开
         time.sleep(1)
-        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(18,2)).click()
-        time.sleep(0.5)
+        self.driver.find_elements_by_class_name("el-collapse-item__arrow")[0].click()
+        time.sleep(1)
         #点击第一章节第1课时的可试看
-        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(19,2)).click()
-        a = self.driver.find_elements_by_class_name('word')[1].text
+        self.driver.find_elements_by_class_name("title_right")[0].click()
+        time.sleep(2)
+        #断言第一章节节第一课时的场景文件名称
+        a = self.driver.find_elements_by_class_name('el-popover__reference')[1].text
         b = sheet1.cell_value(87,2)
         self.assertEqual(a, b, '场景文件名称错误')
-        #断言第二章节第一课时的课件名称
-        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(19,2)).click()
+
+        #断言第一章节第一课时的课件名称
         a = self.driver.find_elements_by_class_name('word')[1].text
-        b = sheet1.cell_value(89,2)
+        b = sheet1.cell_value(88,2)
         self.assertEqual(a, b, '课件名称错误')
+        #点击课件并截图
+        self.driver.find_elements_by_class_name('el-popover__reference')[1].click()
+        time.sleep(7)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/004_课程详情页预览模型.jpg')
+        self.driver.find_element_by_class_name('el-dialog__close').click()
+        time.sleep(1)
 
-
-        
-
-
-        
-
-        
-
-
-        
-
-
-
-        
-
-
-    # def test_005_republishCourse(self):
-
-
+    def test_006_republishCourse(self):
+        self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(85,4)).click()
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(78,2)).click()
+        time.sleep(2)
 
 
 

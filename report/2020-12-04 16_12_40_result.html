@@ -191,9 +191,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-12-01 12:53:46</p>
-<p class='attribute'><strong>Duration:</strong> 0:08:23.396979</p>
-<p class='attribute'><strong>Status:</strong> Pass 12 Failure 2 Error 8</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-12-04 16:12:40</p>
+<p class='attribute'><strong>Duration:</strong> 0:10:12.110873</p>
+<p class='attribute'><strong>Status:</strong> Pass 15 Failure 1 Error 8</p>
 
 <p class='description'>Implementation Example with: </p>
 </div>
@@ -248,16 +248,8 @@ function showOutput(id, name) {
         <pre>
         
 pt1.1: 账号密码登录官网
-二维中坐标的位置： 105 123
+二维中坐标的位置： 76 219
 正在进行第1次滑动验证
-第1次验证失败... 
-
-二维中坐标的位置： 109 27
-正在进行第2次滑动验证
-第2次验证失败... 
-
-二维中坐标的位置： 76 111
-正在进行第3次滑动验证
 找到社区啦
 已经通过验证码!!!
 
@@ -294,24 +286,33 @@ pt1.1: 账号密码登录官网
         <pre>
         
 ft2.1: 官网创建作品保存为草稿
-二维中坐标的位置： 98 154
+账号密码登录官网
+二维中坐标的位置： 67 125
 正在进行第1次滑动验证
 第1次验证失败... 
 
-二维中坐标的位置： 110 131
+二维中坐标的位置： 31 83
 正在进行第2次滑动验证
+第2次验证失败... 
+
+二维中坐标的位置： 112 34
+正在进行第3次滑动验证
+第3次验证失败... 
+
+二维中坐标的位置： 2 155
+正在进行第4次滑动验证
+找到社区啦
+登录成功!!!
 Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 98, in test_001_creatWorkSaveDraft
-    ActionChains(self.driver).drag_and_drop_by_offset(drop, xoffset=y+10, yoffset=0).perform()
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\common\action_chains.py", line 80, in perform
-    self.w3c_actions.perform()
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 76, in perform
-    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 123, in test_001_creatWorkSaveDraft
+    self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium &gt; .el-input__inner").send_keys("admin032")
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: TypeError: rect is undefined
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-input--medium &gt; .el-input__inner
 
 
 
@@ -338,17 +339,15 @@ selenium.common.exceptions.WebDriverException: Message: TypeError: rect is undef
         <pre>
         
 ft2.2: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 173, in test_002_copyWork
+  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 239, in test_002_copyWork
     self.driver.find_element(By.XPATH, sheet2.cell_value(19,4)).click()
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
-    self._execute(Command.CLICK_ELEMENT)
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
-    return self._parent.execute(command, params)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementNotInteractableException: Message: Element &lt;div class="verify-move-block"&gt; could not be scrolled into view
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //div[2]/div/div[2]/div/div
 
 
 
@@ -375,7 +374,7 @@ selenium.common.exceptions.ElementNotInteractableException: Message: Element &lt
         <pre>
         
 ft2.3: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 203, in test_003_deleteWork
+  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 269, in test_003_deleteWork
     self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
     'value': value})['value']
@@ -410,7 +409,7 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
         <pre>
         
 ft2.4: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 221, in test_004_EditWorkAndSave
+  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 287, in test_004_EditWorkAndSave
     self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
     'value': value})['value']
@@ -445,7 +444,7 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
         <pre>
         
 ft2.5: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 287, in test_005_publishWork
+  File "e:\zhuqueAutomation\cases\test_002_creatWork.py", line 353, in test_005_publishWork
     self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
     'value': value})['value']
@@ -497,9 +496,9 @@ pt2.6: 上传介绍图成功
 <tr class='errorClass'>
     <td>test_003_checkWork.CreatCourse</td>
     <td>4</td>
-    <td>2</td>
+    <td>0</td>
     <td>1</td>
-    <td>1</td>
+    <td>3</td>
     <td><a href="javascript:showClassDetail('c3',4)">Detail</a></td>
 </tr>
 
@@ -518,8 +517,13 @@ pt2.6: 上传介绍图成功
         </div>
         <pre>
         
-ft3.1: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 64, in test_001_loginOperation
+ft3.1: 账号密码登录运营后台
+二维中坐标的位置： 21 225
+正在进行第1次滑动验证
+找到社区啦
+登录运营后台成功!!!
+Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 125, in test_001_loginOperation
     self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium &gt; .el-input__inner").clear()
   File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
     'value': value})['value']
@@ -538,30 +542,67 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
     </td>
 </tr>
 
-<tr id='pt3.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_002_checkWorkNopass: 审核作品不通过</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
-
-<tr id='pt3.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_003_checkWorkPass</div></td>
+<tr id='ft3.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_002_checkWorkNopass: 审核作品不通过</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+        error</a>
 
-    <div id='div_pt3.3' class="popup_window">
+    <div id='div_ft3.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt3.3: 二维中坐标的位置： 46 137
-正在进行第1次滑动验证
-进入首页
-已经通过验证码!!!,登录官网成功
+ft3.2: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 182, in test_002_checkWorkNopass
+    self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(14,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-submenu:nth-child(10) &gt; .el-submenu__title &gt; span
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_003_checkWorkPass</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
+        error</a>
+
+    <div id='div_ft3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.3: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 215, in test_003_checkWorkPass
+    self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(19,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-table__row:nth-child(1) .el-button--primary &gt; span
+
 
 
         </pre>
@@ -587,10 +628,10 @@ pt3.3: 二维中坐标的位置： 46 137
         <pre>
         
 ft3.4: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 289, in test_004_republishWork
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 350, in test_004_republishWork
     self.assertEqual(a, b, '审核不通过，但在线作品页看到第三个位置的作品的状态错误')
-AssertionError: '已审核' != '未通过'
-- 已审核
+AssertionError: '未审核' != '未通过'
+- 未审核
 + 未通过
  : 审核不通过，但在线作品页看到第三个位置的作品的状态错误
 
@@ -602,12 +643,12 @@ AssertionError: '已审核' != '未通过'
     </td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>test_004_creatCourse.CreatCourse</td>
     <td>7</td>
-    <td>5</td>
-    <td>1</td>
-    <td>1</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c4',7)">Detail</a></td>
 </tr>
 
@@ -627,6 +668,11 @@ AssertionError: '已审核' != '未通过'
         <pre>
         
 pt4.1: 官网创建作品保存为草稿
+账号密码登录官网
+二维中坐标的位置： 1 120
+正在进行第1次滑动验证
+找到社区啦
+登录成功!!!
 
 
         </pre>
@@ -646,36 +692,28 @@ pt4.1: 官网创建作品保存为草稿
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft4.4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_004_EditCourseAndSave: 官网编辑课程并保存</div></td>
+<tr id='pt4.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_004_EditCourseAndSave: 官网编辑斑马2课程并保存</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.4')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.4')" >
+        pass</a>
 
-    <div id='div_ft4.4' class="popup_window">
+    <div id='div_pt4.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft4.4: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/01/20201201125944869_%E6%96%91%E9%A9%AC2.jpg
-blob:https://staging.www.qiaojianyun.com/f68d8708-de28-46d5-b42f-737d5e2ec7de
-Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_004_creatCourse.py", line 235, in test_004_EditCourseAndSave
-    self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
-    self._execute(Command.CLICK_ELEMENT)
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
-    return self._parent.execute(command, params)
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementClickInterceptedException: Message: Element &lt;span&gt; is not clickable at point (1148,696) because another element &lt;div class="el-loading-mask is-fullscreen"&gt; obscures it
-
+pt4.4: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/04/20201204041836952_%E6%96%91%E9%A9%AC2.jpg
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/04/20201204041841031_%E6%96%91%E9%A9%AC2.jpg
+更改后的章节介绍=章节1介绍
+更改后的场景文件=jirou
+更改后的课件名称：素材.ppt
+更改后的课时标题=课时1标题
+更改后的章节标题=章节1名称
 
 
         </pre>
@@ -685,39 +723,13 @@ selenium.common.exceptions.ElementClickInterceptedException: Message: Element &l
     </td>
 </tr>
 
-<tr id='ft4.5' class='none'>
-    <td class='failCase'><div class='testcase'>test_005_coursePublish: 课程草稿箱点击右下角的设置按钮发布</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.5')" >
-        fail</a>
-
-    <div id='div_ft4.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.5').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft4.5: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_004_creatCourse.py", line 323, in test_005_coursePublish
-    self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
-AssertionError: '斑马(下斑马亚属和细纹斑马亚属动物统称)' != '斑马2'
-- 斑马(下斑马亚属和细纹斑马亚属动物统称)
-+ 斑马2
- : 发布失败，审核状态页第一个课程的名称不对
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt4.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_005_coursePublish: 课程草稿箱点击右下角的设置按钮发布</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt4.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_006_EditCourseAndPublish: 课程编辑页发布课程</div></td>
+    <td class='none'><div class='testcase'>test_006_EditCourseAndPublish: 课程编辑页发布课程斑马3</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -731,10 +743,10 @@ AssertionError: '斑马(下斑马亚属和细纹斑马亚属动物统称)' != '�
         </div>
         <pre>
         
-pt4.6: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/01/20201201010018082_%E6%96%91%E9%A9%AC3.jpg
-https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/01/20201201010023143_%E6%96%91%E9%A9%AC3.jpg
+pt4.6: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/04/20201204041938497_%E6%96%91%E9%A9%AC3.jpg
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/04/20201204041943547_%E6%96%91%E9%A9%AC3.jpg
 更改后的章节介绍=章节1介绍
-更改后的场景文件=水星
+更改后的场景文件=jirou
 更改后的课件名素材.ppt
 更改后的课时标题=课时1标题
 更改后的章节标题=章节1名称
@@ -752,41 +764,34 @@ https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/ima
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>test_005_checkCourse.CreatCourse</td>
-    <td>3</td>
-    <td>2</td>
+<tr class='passClass'>
+    <td>test_005_checkCourse.CheckCourse</td>
+    <td>5</td>
+    <td>5</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c5',3)">Detail</a></td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',5)">Detail</a></td>
 </tr>
 
-<tr id='ft5.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_001_login: 审核第三个课程为不通过</div></td>
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_loginOperation: 登录运营后台</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        pass</a>
 
-    <div id='div_ft5.1' class="popup_window">
+    <div id='div_pt5.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft5.1: Traceback (most recent call last):
-  File "e:\zhuqueAutomation\cases\test_005_checkCourse.py", line 65, in test_001_login
-    self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium &gt; .el-input__inner").clear()
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
-    'value': value})['value']
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-input--medium &gt; .el-input__inner
-
+pt5.1: 二维中坐标的位置： 46 213
+正在进行第1次滑动验证
+进入首页
+已经通过验证码!!!,登录运营后台成功
 
 
         </pre>
@@ -806,11 +811,68 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
     <td colspan='5' align='center'>pass</td>
 </tr>
 
+<tr id='pt5.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_004_checkCourseCentre: 检查官网的课程的审核结果</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.4')" >
+        pass</a>
+
+    <div id='div_pt5.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.4: 二维中坐标的位置： 28 173
+正在进行第1次滑动验证
+第1次验证失败... 
+
+二维中坐标的位置： 1 187
+正在进行第2次滑动验证
+找到社区啦
+已经通过验证码!!!
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_005_checkResultOfDetail: 点击斑马3,进入详情页,断言日期</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.5')" >
+        pass</a>
+
+    <div id='div_pt5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.5: 2020-12-04
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>22</td>
-    <td class="text text-success">12</td>
-    <td class="text text-danger">2</td>
+    <td>24</td>
+    <td class="text text-success">15</td>
+    <td class="text text-danger">1</td>
     <td class="text text-warning">8</td>
     <td>&nbsp;</td>
 </tr>
