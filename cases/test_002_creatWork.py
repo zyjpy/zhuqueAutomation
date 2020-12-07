@@ -116,9 +116,10 @@ class CreatCourse(unittest.TestCase):
                     time.sleep(1)
                 k = k + 1
             print ('登录成功!!!')
-        else:
             self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
             time.sleep(2)
+        else:
+            pass
 
         time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR,".creat-button").click()

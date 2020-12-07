@@ -129,7 +129,6 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").send_keys("12345678")
         time.sleep(1)
         self.driver.find_element_by_xpath('//span[contains(.,"登录")]').click()
-
         time.sleep(2)
         k = 1
         while True:
@@ -179,6 +178,7 @@ class CreatCourse(unittest.TestCase):
         print ('已经通过验证码!!!,登录运营后台成功')
     def test_002_checkWorkNopass(self):
         '''审核作品不通过'''
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(14,2)).click()
         time.sleep(1)
         self.driver.find_element(By.XPATH, sheet4.cell_value(16,4)).click()
@@ -336,11 +336,10 @@ class CreatCourse(unittest.TestCase):
         b = sheet1.cell_value(51,2)
         self.assertEqual(a, b, '审核通过，在线作品页看到这个作品：猴子4')
 
-    def test_004_republishWork(self):
+    def test_004_EditNopaaWorkAndSave(self):
+        '''编辑不通过的作品并保存到草稿'''
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
-        self.driver.set_window_size(1800,1040)
-        self.driver.set_window_rect(0,0)
-        time.sleep(2)
+        time.sleep(3)
         self.driver.find_element_by_css_selector(sheet2.cell_value(21,2)).click()
         #断言审核状态页第三个位置的作品的状态为未通过
         time.sleep(2)
@@ -400,7 +399,13 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
         b = sheet1.cell_value(55,2)
-        self.assertEqual(a, b, '在审核状态页编辑并保存,失败，在我的在线作品页看不到保存的作品')
+        self.assertEqual(a, b, '在审核状态页编辑并保存,结果失败，在我草稿页看不到保存的作品')
+
+
+    def test_005_republishWork(self):
+        '''编辑不通过的作品并保存到草稿'''
+        self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
+        time.sleep(3)
         #点击审核状态页
         self.driver.find_element_by_css_selector(sheet2.cell_value(21,2)).click()
         time.sleep(2)

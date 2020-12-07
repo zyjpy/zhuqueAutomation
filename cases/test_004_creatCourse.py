@@ -334,6 +334,14 @@ class CreatCourse(unittest.TestCase):
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
         time.sleep(8)
+        if self.isElementExist("//div[4]/div/div/div"):
+            print("上传成功课件成功")
+        else:
+            self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            time.sleep(8)
+
         pptName = self.driver.find_elements_by_class_name('courseware-name')[0].text
         print("更改后的课件名称："+pptName)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
@@ -516,7 +524,7 @@ class CreatCourse(unittest.TestCase):
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(96,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
         time.sleep(5)
-        if self.isElementExist("//div[@id='app']/div/div[3]/div/div[2]/form/div[3]/div/div/div/ul/li/div/span"):
+        if self.isElementExist("//li/div/span"):
             print("上传成功")
         else:
             self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
@@ -564,7 +572,6 @@ class CreatCourse(unittest.TestCase):
         a = self.driver.find_elements_by_class_name("cell")[7].text
         b = sheet1.cell_value(39,2)
         self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
-        #去课程中心看不到该课程
         
 
 if __name__ == '__main__':

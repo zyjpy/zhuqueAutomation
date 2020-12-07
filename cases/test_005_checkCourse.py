@@ -179,7 +179,7 @@ class CheckCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
         time.sleep(2)
         #审核第一课程
-        #点击课程审核状态页
+        #点击课程审核页
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(7,6)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,".course-name").click()
@@ -328,6 +328,7 @@ class CheckCourse(unittest.TestCase):
         b = sheet1.cell_value(81,2)
         self.assertEqual(a, b, '课程详情页现价错误')
         #断言存在加入购物车按钮和立即结算按钮,打开课程章节页
+        time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(17,2)).click()
         time.sleep(1)
         #章节1名称
@@ -362,13 +363,292 @@ class CheckCourse(unittest.TestCase):
         self.driver.find_element_by_class_name('el-dialog__close').click()
         time.sleep(1)
 
-    def test_006_republishCourse(self):
+    def test_006_EditNopassCourseAndSave(self):
+        '''编辑不通过的课程并保存草稿'''
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
-        time.sleep(2)
-        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(85,4)).click()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(29,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(78,2)).click()
+        time.sleep(3)
+        #编辑审核状态页第三个课程
+        self.driver.find_element(By.XPATH,sheet2.cell_value(85,4)).click()
         time.sleep(2)
+        self.driver.find_element(By.XPATH,sheet2.cell_value(105,4)).click()
+        time.sleep(3)
+        #编辑课程名称斑马22
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(39,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(112,3))
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(120,4)).click()
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("tabs-item")[0].click()
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(54,2)).click()
+        time.sleep(3)
+        a = self.driver.find_elements_by_class_name('ellipsis_box')[0].text
+        b = sheet1.cell_value(40,2)
+        self.assertEqual(a, b, '在审核状态页编辑并保存,结果失败，在我草稿页看不到保存的作品')
+
+
+    def test_007_republishCourse(self): 
+        '''编辑不通过的课程并发布''' 
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(78,2)).click()
+        time.sleep(2)
+        #编辑审核状态页第三个课程
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(103,2)).click()
+        time.sleep(1)
+        #编辑课程名称斑马22
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(39,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(112,3))
+
+        #编辑课程的icon
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(61,2)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(113,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(4)
+        #删除第一张课程介绍图
+        js = 'document.getElementsByClassName("el-icon-delete")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(0.5)
+        #编辑课程的介绍图
+        js = 'document.getElementsByClassName("el-icon-plus")[0].click()'
+        self.driver.execute_script(js)
+        time.sleep(0.5)
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(113,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(6)
+        if self.isElementExist("//li/div/span"):
+            print("上传成功")
+        else:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+            time.sleep(1)
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(114,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            time.sleep(5)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
+
+        #编辑更新章节1的名称
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("el-button--primary")[40].click()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(115,3))
+        time.sleep(2)
+        #编辑更新章节1的介绍
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).clear()
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(44,2)).send_keys(sheet2.cell_value(116,3))        
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(45,2)).click()
+        time.sleep(1)
+        chaptersIntroduce2 = self.driver.find_elements_by_class_name('chapter-header-title__desc')[0].text
+        print("更改后的章节介绍=" +chaptersIntroduce2)
+        #编辑更新章节1的课时1的名称
+        #点击弹出已有课时列表
+        self.driver.find_element(By.XPATH, sheet2.cell_value(67,4)).click()
+        #点击编辑第一课时
+        self.driver.find_element(By.XPATH, sheet2.cell_value(68,4)).click()
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("el-input__inner")[6].clear()
+        self.driver.find_elements_by_class_name("el-input__inner")[6].send_keys(sheet2.cell_value(117,3))
+        # #删除第一个场景文件
+        # self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(70,2)).click()
+        #添加场景文件
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(48,2)).click()
+        #选择第三个场景文件：内脏
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("list-item-title")[2].click()
+        time.sleep(1)
+        sceneName2 = self.driver.find_elements_by_class_name('scene-item')[0].text
+        print("更改后的场景文件=" +sceneName2)
+
+        #上传课件，先删除课件
+        # js = 'document.getElementsByClassName("el-icon-delete deleteIcon")[1].click()'
+        # self.driver.execute_script(js)
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
+        autoit.control_click("文件上传","[Class:Button; instance:1]")
+        time.sleep(8)
+        pptName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
+        print("更改后的课件名" +pptName2)
+        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(74,2)).click()
+        time.sleep(1)
+        lessonName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[1].text
+        print("更改后的课时标题=" +lessonName2)
+        chaptersName2 = self.driver.find_elements_by_class_name('chapter-header-title__label')[0].text
+        print("更改后的章节标题=" +chaptersName2)
+        #点击发布到课程社区
+        self.driver.find_element(By.XPATH, sheet2.cell_value(86,4)).click()
+        #断言审核状态有新发布的课程
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, sheet2.cell_value(78,4)).click()
+        #点击待审核页
+        self.driver.find_element(By.XPATH, sheet2.cell_value(83,4)).click() 
+        time.sleep(1)
+        a = self.driver.find_elements_by_class_name("cell")[7].text
+        b = sheet1.cell_value(41,2)
+        self.assertEqual(a, b, '发布失败，审核状态页第一个课程的名称不对')
+        
+        #登录运营后台审核
+        self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/course/examine/index")
+        self.driver.set_window_size(1800,1040)
+        self.driver.set_window_rect(0,0)
+        time.sleep(2)
+        if self.isElementExist("//div[@id='tab-user']"):
+            print("账号密码登录运营后台")
+            self.driver.get("https://staging.www.qiaojianyun.com/#/login")
+            self.driver.set_window_size(1800,1040)
+            self.driver.set_window_rect(0,0)
+            time.sleep(5)
+            self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("admin032")
+            time.sleep(2)
+            self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").send_keys("123456")
+            self.driver.find_element_by_xpath('//span[contains(.,"登录")]').click()
+            time.sleep(2)
+            k = 1
+            while True:
+                #获取到两张图片链接
+                src = self.driver.find_element_by_xpath('//div[2]/div/div/div/img').get_attribute('src')
+                img = src.split(',')[1]
+                bg_img_scr = base64.b64decode(img)
+                with open('./bg.jpg', 'wb') as f:
+                    f.write(bg_img_scr)     
+
+                src = self.driver.find_element_by_xpath('//div[2]/div/div[2]/div/div/div/img').get_attribute('src')
+                img = src.split(',')[1]
+                front_img_src = base64.b64decode(img)
+                with open('./front.jpg', 'wb') as f:
+                    f.write(front_img_src)      
+
+                #读取图片
+                bg = cv2.imread('./bg.jpg')
+                front = cv2.imread('./front.jpg')       
+
+                #灰度处理
+                bg = cv2.cvtColor(bg,cv2.COLOR_BGR2GRAY)
+                front = cv2.cvtColor(front,cv2.COLOR_BGR2GRAY)      
+
+                #去掉滑块黑色部分
+                front = front[front.any(1)]#0表示黑色，1表示高亮部分       
+
+                #匹配->cv图像匹配算法
+                result = cv2.matchTemplate(bg, front, cv2.TM_CCOEFF_NORMED)#match匹配,Template模板;精度高，速度慢的方法
+                index_max = np.argmax(result)#返回的是一维的位置，最大值索引       
+
+                #反着推最大值的二维位置，和opencv是相反的
+                x, y = np.unravel_index(index_max, result.shape)
+                print ("二维中坐标的位置：",x, y)
+                print ("正在进行第%s次滑动验证"%k)
+                drop = self.driver.find_element_by_xpath('//div[2]/div/div/i')    
+                ActionChains(self.driver).drag_and_drop_by_offset(drop, xoffset=y+10, yoffset=0).perform()
+                time.sleep(3)
+                #验证成功后获取“验证成功”，直到找到“验证成功”才跳出while True循环
+                if self.isElementExist("//div[@id='kecheng']"):
+                    print("找到社区啦")
+                    break
+                else:
+                    print ('第%s次验证失败...'%k,'\n')
+                    time.sleep(1)
+                k = k + 1
+            print ('登录运营后台成功!!!')
+            time.sleep(1)
+        else:
+            pass
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").clear()
+        self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("zyj")
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").clear()
+        self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").send_keys("12345678")
+        time.sleep(1)
+        self.driver.find_element_by_xpath('//span[contains(.,"登录")]').click()
+        time.sleep(2)
+        k = 1
+        while True:
+            #获取到两张图片链接
+            src = self.driver.find_element_by_xpath('//div[2]/div/div/div/img').get_attribute('src')
+            img = src.split(',')[1]
+            bg_img_scr = base64.b64decode(img)
+            with open('./bg.jpg', 'wb') as f:
+                f.write(bg_img_scr) 
+
+            src = self.driver.find_element_by_xpath('//div[2]/div/div[2]/div/div/div/img').get_attribute('src')
+            img = src.split(',')[1]
+            front_img_src = base64.b64decode(img)
+            with open('./front.jpg', 'wb') as f:
+                f.write(front_img_src)  
+
+            #读取图片
+            bg = cv2.imread('./bg.jpg')
+            front = cv2.imread('./front.jpg')   
+
+            #灰度处理
+            bg = cv2.cvtColor(bg,cv2.COLOR_BGR2GRAY)
+            front = cv2.cvtColor(front,cv2.COLOR_BGR2GRAY)  
+
+            #去掉滑块黑色部分
+            front = front[front.any(1)]#0表示黑色，1表示高亮部分   
+
+            #匹配->cv图像匹配算法
+            result = cv2.matchTemplate(bg, front, cv2.TM_CCOEFF_NORMED)#match匹配,Template模板;精度高，速度慢的方法
+            index_max = np.argmax(result)#返回的是一维的位置，最大值索引   
+
+            #反着推最大值的二维位置，和opencv是相反的
+            x, y = np.unravel_index(index_max, result.shape)
+            print ("二维中坐标的位置：",x, y)
+            print ("正在进行第%s次滑动验证"%k)
+            drop = self.driver.find_element_by_xpath('//div[2]/div/div/i')    
+            ActionChains(self.driver).drag_and_drop_by_offset(drop, xoffset=y+10, yoffset=0).perform()
+            time.sleep(3)
+            #验证成功后获取“验证成功”，直到找到“验证成功”才跳出while True循环
+            if self.isElementExist("//div[@id='tab-/wel/index']"):
+                print("进入首页")
+                break
+            else:
+                print ('第%s次验证失败...'%k,'\n')
+                time.sleep(1)
+            k = k + 1
+        print ('已经通过验证码!!!,登录运营后台成功')
+
+        #跳转到运营后台审核页
+        self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/course/examine/index")
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(7,6)).click()
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,".course-name").click()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        time.sleep(2)
+        #输入审核原因
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(43,2)).send_keys(sheet4.cell_value(43,3))
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
+        #进入官网课程更多页
+        self.driver.get("https://staging.www.qiaojianyun.com/#/courseCenterList")
+        time.sleep(3)
+        a = self.driver.find_elements_by_class_name("word")[0].text
+        b = sheet1.cell_value(42,2)
+        self.assertEqual(a, b, '发布失败，课程中心列表第一个课程的名称不对')
+        self.driver.find_elements_by_class_name("word")[0].click()
+        time.sleep(3)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/005_重新发布的课程的详情.jpg')
+        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(17,2)).click()
+        time.sleep(1)
+        self.driver.find_element(By.XPATH,sheet3.cell_value(18,4)).click()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH,sheet3.cell_value(19,4)).click()
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("scene-title")[0].click()
+        time.sleep(8)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/006_重新发布的课程的模型.jpg')
+
+
+
+
+        
 
 
 
