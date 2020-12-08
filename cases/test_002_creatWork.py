@@ -273,7 +273,7 @@ class CreatCourse(unittest.TestCase):
 
         #编辑添加作品的场景文件
         self.driver.find_element(By.XPATH, sheet2.cell_value(48,4)).click()
-        time.sleep
+        time.sleep(2)
         #选择第二个场景文件
         time.sleep(2)
         moudleFileName = self.driver.find_elements_by_class_name("list-item-title")[1].text
@@ -344,7 +344,7 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(12,2)).click()
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(14,2)).click()
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(3,2)).clear()

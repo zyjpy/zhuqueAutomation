@@ -122,6 +122,7 @@ class CheckCourse(unittest.TestCase):
                 time.sleep(1)
             k = k + 1
         print ('已经通过验证码!!!,登录运营后台成功')
+        time.sleep(2)
     def test_002_checkNopass(self):
         '''第三课程斑马2审核不通过'''
         self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(2,2)).click()
@@ -252,7 +253,7 @@ class CheckCourse(unittest.TestCase):
         time.sleep(2)
         #点击课程中心
         self.driver.find_element(By.ID,"kecheng").click()
-        time.sleep(3)
+        time.sleep(4)
         #断言课程中心页斑马3的作品的属性，名称，简介，原价，现价，难度
         a = self.driver.find_elements_by_class_name('word')[1].text
         b = sheet1.cell_value(63,2)
@@ -366,6 +367,7 @@ class CheckCourse(unittest.TestCase):
     def test_006_EditNopassCourseAndSave(self):
         '''编辑不通过的课程并保存草稿'''
         self.driver.get("https://staging.www.qiaojianyun.com/#/workBench")
+        time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(29,2)).click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(78,2)).click()
@@ -466,7 +468,7 @@ class CheckCourse(unittest.TestCase):
         # self.driver.execute_script(js)
         time.sleep(2)
         self.driver.find_element(By.XPATH, sheet2.cell_value(50,4)).click()
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(73,2))
+        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(119,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
         time.sleep(8)
         pptName2 = self.driver.find_elements_by_class_name('courseware-name')[0].text
@@ -551,65 +553,10 @@ class CheckCourse(unittest.TestCase):
                     time.sleep(1)
                 k = k + 1
             print ('登录运营后台成功!!!')
-            time.sleep(1)
+            time.sleep(2)
         else:
             pass
-        time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").clear()
-        self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium > .el-input__inner").send_keys("zyj")
         time.sleep(2)
-        self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").clear()
-        self.driver.find_element(By.CSS_SELECTOR, ".el-input--small > .el-input__inner").send_keys("12345678")
-        time.sleep(1)
-        self.driver.find_element_by_xpath('//span[contains(.,"登录")]').click()
-        time.sleep(2)
-        k = 1
-        while True:
-            #获取到两张图片链接
-            src = self.driver.find_element_by_xpath('//div[2]/div/div/div/img').get_attribute('src')
-            img = src.split(',')[1]
-            bg_img_scr = base64.b64decode(img)
-            with open('./bg.jpg', 'wb') as f:
-                f.write(bg_img_scr) 
-
-            src = self.driver.find_element_by_xpath('//div[2]/div/div[2]/div/div/div/img').get_attribute('src')
-            img = src.split(',')[1]
-            front_img_src = base64.b64decode(img)
-            with open('./front.jpg', 'wb') as f:
-                f.write(front_img_src)  
-
-            #读取图片
-            bg = cv2.imread('./bg.jpg')
-            front = cv2.imread('./front.jpg')   
-
-            #灰度处理
-            bg = cv2.cvtColor(bg,cv2.COLOR_BGR2GRAY)
-            front = cv2.cvtColor(front,cv2.COLOR_BGR2GRAY)  
-
-            #去掉滑块黑色部分
-            front = front[front.any(1)]#0表示黑色，1表示高亮部分   
-
-            #匹配->cv图像匹配算法
-            result = cv2.matchTemplate(bg, front, cv2.TM_CCOEFF_NORMED)#match匹配,Template模板;精度高，速度慢的方法
-            index_max = np.argmax(result)#返回的是一维的位置，最大值索引   
-
-            #反着推最大值的二维位置，和opencv是相反的
-            x, y = np.unravel_index(index_max, result.shape)
-            print ("二维中坐标的位置：",x, y)
-            print ("正在进行第%s次滑动验证"%k)
-            drop = self.driver.find_element_by_xpath('//div[2]/div/div/i')    
-            ActionChains(self.driver).drag_and_drop_by_offset(drop, xoffset=y+10, yoffset=0).perform()
-            time.sleep(3)
-            #验证成功后获取“验证成功”，直到找到“验证成功”才跳出while True循环
-            if self.isElementExist("//div[@id='tab-/wel/index']"):
-                print("进入首页")
-                break
-            else:
-                print ('第%s次验证失败...'%k,'\n')
-                time.sleep(1)
-            k = k + 1
-        print ('已经通过验证码!!!,登录运营后台成功')
-
         #跳转到运营后台审核页
         self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/course/examine/index")
         time.sleep(3)

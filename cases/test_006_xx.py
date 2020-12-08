@@ -38,7 +38,7 @@ sheet2 = wb.sheet_by_index(1)
 sheet3 = wb.sheet_by_index(2)
 sheet4 = wb.sheet_by_index(3)
 
-
+'''
 class CheckCourse(unittest.TestCase):
     def isElementExist(self,element):
         flag = True

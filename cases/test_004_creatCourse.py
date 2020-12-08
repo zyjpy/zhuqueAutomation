@@ -52,7 +52,7 @@ class CreatCourse(unittest.TestCase):
         self.driver = dr
     @classmethod
     def tearDownClass(self):
-        pass
+        self.driver.quit()
 
     def test_001_creatWorkSaveDraft(self):
         '''官网创建作品保存为草稿'''
@@ -133,11 +133,14 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(35,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(36,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
-        autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(38,2))
-        autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(3)
+        time.sleep(6)
+        if self.isElementExist("//li/div/span"):
+            print("上传成功")
+        else:
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(38,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            time.sleep(6)
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(39,2)).send_keys(sheet2.cell_value(39,3))
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(40,2)).send_keys(sheet2.cell_value(40,3))
         time.sleep(1)
@@ -160,7 +163,12 @@ class CreatCourse(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(50,2)).click()
         autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(51,2))
         autoit.control_click("文件上传","[Class:Button; instance:1]")
-        time.sleep(5)
+        time.sleep(6)
+        if self.isElementExist("/html/body/div[7]/div/div[2]/div[2]/div[4]/div/div[1]"):
+            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(50,2)).click()
+            autoit.control_set_text("文件上传","[Class:Edit; instance:1]",sheet2.cell_value(51,2))
+            autoit.control_click("文件上传","[Class:Button; instance:1]")
+            time.sleep(6)
         self.driver.find_element(By.CSS_SELECTOR,sheet2.cell_value(52,2)).click()
         #添加第二章节
         time.sleep(1)
@@ -195,15 +203,10 @@ class CreatCourse(unittest.TestCase):
         self.assertEqual(a, b, '创建失败，创建的课程不在草稿箱中')
     def test_002_copyCourse(self):
         '''复制课程'''
+        self.driver.refresh()
         time.sleep(2)
-        try:
-            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
-        except Exception as e:
-            time.sleep(1)
-            self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
-            pass
-
-        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR, ".tabs-title > div:nth-child(2)").click()
+        time.sleep(2)
         js = 'document.getElementsByClassName("backRotate")[0].click()'
         self.driver.execute_script(js)        
         time.sleep(1)
@@ -296,7 +299,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(2)
         self.driver.find_element(By.XPATH, sheet2.cell_value(41,4)).click()
         #编辑更新章节1的名称
-        time.sleep(1)
+        time.sleep(2)
         self.driver.find_element(By.XPATH, sheet2.cell_value(64,4)).click()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).clear()
         self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(43,2)).send_keys(sheet2.cell_value(65,3))
@@ -369,7 +372,7 @@ class CreatCourse(unittest.TestCase):
         time.sleep(1)
         #点击发布按钮
         self.driver.find_element(By.XPATH, sheet2.cell_value(76,4)).click()
-        time.sleep(2)
+        time.sleep(3)
         #断言发布的课程后不在我的课程草稿页
         a = self.driver.find_elements_by_class_name(sheet2.cell_value(79,1))[0].text
         b = sheet1.cell_value(33,2)

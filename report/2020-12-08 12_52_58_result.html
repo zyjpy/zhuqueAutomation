@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>Test Report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2020-12-08 12:52:58</p>
+<p class='attribute'><strong>Duration:</strong> 0:12:11.525395</p>
+<p class='attribute'><strong>Status:</strong> Pass 18 Failure 3 Error 7</p>
+
+<p class='description'>Implementation Example with: </p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)' class="btn btn-xs btn-primary">Summary</a>
+<a href='javascript:showCase(1)' class="btn btn-xs btn-danger">Failed</a>
+<a href='javascript:showCase(2)' class="btn btn-xs btn-info">All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_001_loginByAccount.Login</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_loginOfficeByAccount: 账号密码登录官网</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 账号密码登录官网
+二维中坐标的位置： 98 149
+正在进行第1次滑动验证
+找到社区啦
+已经通过验证码!!!
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_002_creatWork.CreatCourse</td>
+    <td>7</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',7)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_creatWorkSaveDraft: 官网创建作品保存为草稿</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: 官网创建作品保存为草稿
+上传成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_002_copyWork: 官网复制作品</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003_deleteWork: 官网删除作品</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_004_EditWorkAndSave: 官网编辑作品并保存</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
+        pass</a>
+
+    <div id='div_pt2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.4: 
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208125459563_monkey02.png
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208125504121_monkey02.png
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_005_publishWork: 官网草稿页发布作品</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_006_EditAndPublish: 官网编辑页发布作品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
+        pass</a>
+
+    <div id='div_pt2.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.6: 上传介绍图成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_007_creatWorkAndPublish: 官网创建作品并发布</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_003_checkWork.CreatCourse</td>
+    <td>5</td>
+    <td>0</td>
+    <td>1</td>
+    <td>4</td>
+    <td><a href="javascript:showClassDetail('c3',5)">Detail</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_001_loginOperation: 登录运营后台</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        error</a>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: 账号密码登录运营后台
+二维中坐标的位置： 112 152
+正在进行第1次滑动验证
+找到社区啦
+登录运营后台成功!!!
+Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 125, in test_001_loginOperation
+    self.driver.find_element(By.CSS_SELECTOR, ".el-input--medium &gt; .el-input__inner").clear()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-input--medium &gt; .el-input__inner
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_002_checkWorkNopass: 审核作品不通过</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+        error</a>
+
+    <div id='div_ft3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.2: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 182, in test_002_checkWorkNopass
+    self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(14,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-submenu:nth-child(10) &gt; .el-submenu__title &gt; span
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_003_checkWorkPass</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
+        error</a>
+
+    <div id='div_ft3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.3: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 215, in test_003_checkWorkPass
+    self.driver.find_element(By.CSS_SELECTOR, sheet4.cell_value(19,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .el-table__row:nth-child(1) .el-button--primary &gt; span
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_004_EditNopaaWorkAndSave: 编辑不通过的作品并保存到草稿</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+        fail</a>
+
+    <div id='div_ft3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.4: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 349, in test_004_EditNopaaWorkAndSave
+    self.assertEqual(a, b, '审核不通过，但在线作品页看到第三个位置的作品的状态错误')
+AssertionError: '未审核' != '未通过'
+- 未审核
++ 未通过
+ : 审核不通过，但在线作品页看到第三个位置的作品的状态错误
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_005_republishWork: 编辑不通过的作品并保存到草稿</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.5')" >
+        error</a>
+
+    <div id='div_ft3.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.5: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_003_checkWork.py", line 413, in test_005_republishWork
+    self.driver.find_element_by_css_selector(sheet2.cell_value(98,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: Element &lt;span&gt; could not be scrolled into view
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_004_creatCourse.CreatCourse</td>
+    <td>7</td>
+    <td>5</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c4',7)">Detail</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_001_creatWorkSaveDraft: 官网创建作品保存为草稿</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        error</a>
+
+    <div id='div_ft4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.1: 官网创建作品保存为草稿
+Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_004_creatCourse.py", line 137, in test_001_creatWorkSaveDraft
+    self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(37,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: Element &lt;i class="el-icon-plus"&gt; is not clickable at point (620,362) because another element &lt;div class="el-loading-mask is-fullscreen"&gt; obscures it
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_002_copyCourse: 复制课程</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.2')" >
+        error</a>
+
+    <div id='div_ft4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.2: Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_004_creatCourse.py", line 205, in test_002_copyCourse
+    self.driver.find_element(By.CSS_SELECTOR, sheet2.cell_value(19,2)).click()
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: Element &lt;div class="tabs-item addSelected"&gt; is not clickable at point (275,541) because another element &lt;div class="el-loading-mask is-fullscreen"&gt; obscures it
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt4.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003_deleteCourse: 删除课程</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt4.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_004_EditCourseAndSave: 官网编辑斑马2课程并保存</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.4')" >
+        pass</a>
+
+    <div id='div_pt4.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.4: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208125920548_%E6%96%91%E9%A9%AC2.jpg
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208125924564_%E6%96%91%E9%A9%AC2.jpg
+更改后的章节介绍=章节1介绍
+更改后的场景文件=jirou
+上传成功课件成功
+更改后的课件名称：素材.ppt
+更改后的课时标题=课时1标题
+更改后的章节标题=章节1名称
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt4.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_005_coursePublish: 课程草稿箱点击右下角的设置按钮发布</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt4.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_006_EditCourseAndPublish: 课程编辑页发布课程斑马3</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.6')" >
+        pass</a>
+
+    <div id='div_pt4.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.6: https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208010023969_%E6%96%91%E9%A9%AC3.jpg
+https://zhuque-upload-preprod-oss-bucket.oss-cn-shenzhen.aliyuncs.com/zhuque/image/2020/12/08/20201208010028929_%E6%96%91%E9%A9%AC3.jpg
+更改后的章节介绍=章节1介
+更改后的场景文件=jirou
+更改后的课件名素材.ppt
+更改后的课时标题=课时1标
+更改后的章节标题=章节1名
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt4.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_007_creatCourseAndPublish: 创作课程页发布课程</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.7')" >
+        pass</a>
+
+    <div id='div_pt4.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.7: 上传成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>test_005_checkCourse.CheckCourse</td>
+    <td>7</td>
+    <td>5</td>
+    <td>2</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',7)">Detail</a></td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_loginOperation: 登录运营后台</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        pass</a>
+
+    <div id='div_pt5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.1: 二维中坐标的位置： 63 187
+正在进行第1次滑动验证
+进入首页
+已经通过验证码!!!,登录运营后台成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_002_checkNopass: 第三课程斑马2审核不通过</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003_checkpass: 第一课程和第二课程都审核通过，第一课程修改分类为第2和第3分类</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft5.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_004_checkCourseCentre: 检查官网的课程的审核结果</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.4')" >
+        fail</a>
+
+    <div id='div_ft5.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.4: 二维中坐标的位置： 63 132
+正在进行第1次滑动验证
+找到社区啦
+已经通过验证码!!!
+Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_005_checkCourse.py", line 266, in test_004_checkCourseCentre
+    self.assertEqual(a, b, '课程审核通过后课程平台的课程现价不对')
+AssertionError: '免费' != '￥0.01'
+- 免费
++ ￥0.01
+ : 课程审核通过后课程平台的课程现价不对
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_005_checkResultOfDetail: 点击斑马3,进入详情页,断言日期</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.5')" >
+        fail</a>
+
+    <div id='div_ft5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.5: 2020-12-08
+Traceback (most recent call last):
+  File "e:\zhuqueAutomation\cases\test_005_checkCourse.py", line 338, in test_005_checkResultOfDetail
+    self.assertEqual(a, b, '章节1名称错误')
+AssertionError: '章节1名' != '章节1名称'
+- 章节1名
++ 章节1名称
+?     +
+ : 章节1名称错误
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_006_EditNopassCourseAndSave: 编辑不通过的课程并保存草稿</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_007_republishCourse: 编辑不通过的课程并发布</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.7')" >
+        pass</a>
+
+    <div id='div_pt5.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.7: 上传成功
+更改后的章节介绍=斑马22章节1介绍
+更改后的场景文件=jirou
+更改后的课件名素材.ppt
+更改后的课时标题=斑马22课程标题
+更改后的章节标题=斑马22章节1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c6',1)">Detail</a></td>
+</tr>
+
+<tr id='ft6.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_006_xx</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+        error</a>
+
+    <div id='div_ft6.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.1: ImportError: Failed to import test module: test_006_xx
+Traceback (most recent call last):
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\zhangyihui\AppData\Local\Programs\Python\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "e:\zhuqueAutomation\cases\test_006_xx.py", line 99
+    '''
+class CheckCourse(unittest.TestCase):
+    def isElementExist(self,element):
+        flag = True
+        try:
+            self.driver.find_element_by_xpath(element)
+            return flag
+        except:
+            flag = False
+            return flag    
+    @classmethod        
+    def setUpClass(self):
+        fp=webdriver.FirefoxProfile(config_path)
+        dr = webdriver.Firefox(fp)
+        self.driver = dr
+
+        
+    @classmethod
+    def tearDownClass(self):
+        pass
+    def test_006_EditNopassCourseAndSave(self):
+        self.driver.get("https://staging.www.qiaojianyun.com/basicadmin/#/course/examine/index")
+        time.sleep(3)
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(7,6)).click()
+        time.sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR,".course-name").click()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        ActionChains(self.driver).send_keys(Keys.DOWN).perform()
+        time.sleep(2)
+        #输入审核原因
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(43,2)).send_keys(sheet4.cell_value(43,3))
+        time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR,sheet4.cell_value(57,2)).click()
+        #进入官网课程更多页
+        self.driver.get("https://staging.www.qiaojianyun.com/#/courseCenterList")
+        time.sleep(3)
+        a = self.driver.find_elements_by_class_name("word")[0].text
+        b = sheet1.cell_value(42,2)
+        self.assertEqual(a, b, '发布失败，课程中心列表第一个课程的名称不对')
+        self.driver.find_elements_by_class_name("word")[0].click()
+        time.sleep(3)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/005_重新发布的课程的详情.jpg')
+        self.driver.find_element(By.CSS_SELECTOR,sheet3.cell_value(17,2)).click()
+        time.sleep(1)
+        self.driver.find_element(By.XPATH,sheet3.cell_value(18,4)).click()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH,sheet3.cell_value(19,4)).click()
+        time.sleep(2)
+        self.driver.find_elements_by_class_name("scene-title")[0].click()
+        time.sleep(8)
+        pic = ImageGrab.grab((0,0,1800,1040))
+        pic.save('./screenshot/006_重新发布的课程的模型.jpg')
+
+
+if __name__ == '__main__':
+    unittest.main()
+       
+                                     
+                                     
+                   
+            
+                                                      
+                       
+               
+                        
+                           
+                        
+                         
+                                                
+                                  
+                        
+
+        
+                
+                            
+            
+                                               
+                                                                                                
+                     
+                                                                                
+                     
+                                                                        
+                                                                
+                                                                
+                                                                
+                     
+               
+                                                                                                            
+                     
+                                                                                 
+                  
+                                                                                 
+                     
+                                                                   
+                                   
+                                                       
+                                                                  
+                     
+                                             
+                                                   
+                                                                                 
+                     
+                                                                          
+                     
+                                                                          
+                     
+                                                                         
+                     
+                                             
+                                                   
+
+
+                          
+                  ^
+SyntaxError: EOF while scanning triple-quoted string literal
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>28</td>
+    <td class="text text-success">18</td>
+    <td class="text text-danger">3</td>
+    <td class="text text-warning">7</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
